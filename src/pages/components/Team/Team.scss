@@ -1,0 +1,33 @@
+div.row.team-cards-cotainer {
+  .container{
+    .card-container{
+      img{
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+      }
+      h2{
+        color: #fec340;
+        font-weight: 400;
+      }
+      p{
+        font-weight: 600;
+      }
+    }
+    .member-card{
+      width: 20%;
+      margin: 0 2.5%;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  div.row.team-cards-cotainer {
+    .container{
+      .member-card{
+        width: 50%;
+      }
+    }
+  }
+}

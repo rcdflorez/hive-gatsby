@@ -1,0 +1,124 @@
+div.row.footer-cotainer{
+  background-color: #232325;
+  color: #fff;
+
+  div .container{
+
+    .footer-logo{
+      .container-logo{
+        border-right: 1px solid grey;
+        margin-right: 5rem;
+        padding-bottom: 5rem;
+      }
+    }
+
+    .footer-container{
+      .container-item{
+        margin: 0 1rem;
+      }
+      .contact{
+        p{
+          margin-bottom: .5rem;
+        }
+      }
+      a{
+        color: #fff;
+        text-decoration: none;
+      }
+      a:hover{
+        color: #fec340;
+      }
+      .home ul{
+        padding: 0;
+      }
+      .home ul li{
+        list-style: none;
+        margin-bottom: .5rem;
+      }
+      .signUp{
+        form{
+          margin: 1rem 0;
+          display: flex;
+          input{
+            border: none;
+            border-radius: 5px 0 0 5px;
+            padding: .5rem;
+            width: 170px;
+            font-size: 13px;
+          }
+          button[type="submit"]{
+            border: none;
+            border-radius: 0 5px 5px 0;
+            padding: .5rem;
+            color: #ffffff;
+            background-color: #fec340;
+          }
+          button[type="submit"] img{
+            transform: rotate(180deg);
+          }
+        }
+        .copy{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px){
+  div.row.footer-cotainer{
+    div .container{
+      .footer-logo{
+        .container-logo{
+          border-right: inherit;
+          margin-right: inherit;
+          padding-bottom: inherit;
+          text-align: center;
+
+          img{
+            margin-bottom: 3rem;
+          }
+        }
+      }
+
+      
+    }
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px){
+  div.row.footer-cotainer{
+    div .container{
+      .footer-container{
+        .container-item{
+          margin: inherit;
+          max-width: 230px;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  div.row.footer-cotainer{
+    div .container{
+      .footer-container{
+        .container-item{
+          width: 100%;
+        }
+        .signUp{
+          form{
+            display: block;
+          }
+          form input, form button[type=submit]{
+            width: 100%;
+            margin: .5rem 0;
+            border-radius: 5px;
+            padding: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
