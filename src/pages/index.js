@@ -6,6 +6,8 @@ import ContactUs from "./components/ContactUs/ContactUs";
 import Footer from "./components/Footer/Footer";
 import Team from "./components/Team/Team"
 import BlogCards from "./components/BlogCards/BlogCards"
+import Careers from "./components/Careers/Careers";
+import ContactUsWhite from "./components/ContactUsWhite/ContactUsWhite"
 
 const IndexPage = () => {
   return (
@@ -13,6 +15,8 @@ const IndexPage = () => {
       {/* <FeaturedPosts /> */}
       <Team />
       <BlogCards />
+      <Careers/>
+      <ContactUsWhite />
       <ContactUs />
       <Footer />
     </Container>
