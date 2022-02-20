@@ -4,22 +4,26 @@ import OurServicesGrid from "./components/OurServices/OurServices";
 import FeaturedPosts from "./components/FeaturedPosts/FeaturedPosts";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Footer from "./components/Footer/Footer";
-import Team from "./components/Team/Team"
-import BlogCards from "./components/BlogCards/BlogCards"
-import Careers from "./components/Careers/Careers";
-import ContactUsWhite from "./components/ContactUsWhite/ContactUsWhite"
+
+import MainHero from "./components/Home/Hero/MainHero";
+import HomeSeparator from "./components/Home/Separator/Separator";
+import NavBar from "./components/navBar/NavBar";
 
 const IndexPage = () => {
   return (
-    <Container fluid className="App">
-      {/* <FeaturedPosts /> */}
-      <Team />
-      <BlogCards />
-      <Careers/>
-      <ContactUsWhite />
-      <ContactUs />
-      <Footer />
-    </Container>
+    <>
+      <NavBar />
+      <Container fluid className="App m-0">
+        <MainHero />
+
+        <OurServicesGrid />
+        <HomeSeparator />
+        <FeaturedPosts />
+
+        <ContactUs />
+        <Footer />
+      </Container>
+    </>
   );
 };
 

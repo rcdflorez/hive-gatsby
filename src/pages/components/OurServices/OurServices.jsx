@@ -29,7 +29,7 @@ const OurServicesGrid = () => {
     return (
       <>
         <h3 className="text-center pt-5">Our services</h3>
-        <Row className="services-container pt-5 mt-5 px-5 mx-5">
+        <Row className="services-container container pt-5 mt-5 px-5 mx-auto">
           {services.map((service, idx) => (
             <Col className="service-card mx-3 p-5 px-4" key={idx}>
               <Row className="img-container">

@@ -1,0 +1,36 @@
+div.nav-light {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .Nav {
+        position: fixed;
+        z-index: 2;
+        background-color: white;
+        border-bottom: solid 1px #e7e7e7;
+        a {
+            color: #008fcf;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        a:hover {
+            color: #00afff;
+        }
+    }
+    img~img {
+        position: fixed;
+        right: 10px;
+        top: 8px;
+    }
+    .Nav__logo {
+        margin-top: 12px;
+    }
+    .Nav__black {
+        z-index: 2;
+        background: #233e5bd2;
+        a {
+            color: white;
+        }
+    }
+}

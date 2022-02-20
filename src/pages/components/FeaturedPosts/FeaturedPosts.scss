@@ -1,6 +1,36 @@
 div.row.featured-post-cotainer {
-  p {
-    color: red;
-    font-size: 3rem;
+  background-image: url("../../../images/hexagon-background-2-1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 100vh;
+  z-index: 0;
+  div.card-container {
+    -webkit-box-shadow: 3px 3px 20px 0px rgb(0 0 0 / 10%);
+    -moz-box-shadow: 3px 3px 20px 0px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 3px 3px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 20px 0px rgb(0 0 0 / 10%);
+    height: fit-content;
+    background-color: white;
+    h3 {
+      font-weight: 400;
+    }
+    p {
+      font-weight: 300;
+      font-size: 0.9rem;
+      line-height: 30px;
+      a {
+        color: rgb(254, 195, 64);
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+  }
+  div.card-container.last {
+    margin: 15rem 0rem;
+  }
+  div.pre-container {
+    margin: 10rem 0rem;
   }
 }
