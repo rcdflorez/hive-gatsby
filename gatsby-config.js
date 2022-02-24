@@ -11,7 +11,6 @@ module.exports = {
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-dynamic-routes",
     "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",

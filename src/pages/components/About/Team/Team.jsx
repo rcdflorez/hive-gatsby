@@ -35,12 +35,7 @@ function FecthTeamMembers() {
 
 const Team = () => {
   const teamMembers = FecthTeamMembers();
-  const user = {
-    image:
-      "https://hivefs.com/wp-content/uploads/2019/05/JPJames_Website2-300x300-square.png",
-    name: "JP James",
-    title: "Chairman",
-  };
+
   if (teamMembers !== "Loading...") {
     return (
       <>

@@ -50,12 +50,20 @@ const OurStory = () => {
               backgroundColor: "#F5F5F5",
             }}
           >
-            <p className="py-3" style={{ fontWeight: 300, lineHeight: "30px" }}>
+            <div>
               <h3 style={{ fontWeight: 400 }} className="py-3">
                 {parseHtmlEnteties(approach.title.rendered).replace(regex, "")}
-              </h3>
-              {parseHtmlEnteties(approach.content.rendered).replace(regex, "")}
-            </p>
+              </h3>{" "}
+              <p
+                className="py-3"
+                style={{ fontWeight: 300, lineHeight: "30px" }}
+              >
+                {parseHtmlEnteties(approach.content.rendered).replace(
+                  regex,
+                  ""
+                )}
+              </p>
+            </div>
           </div>
         </div>
       </>

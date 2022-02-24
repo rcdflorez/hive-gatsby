@@ -61,10 +61,18 @@ class Navbar extends React.Component {
               >
                 About US
               </Link>
-              <Link activeStyle={activeStyles} className="my-auto mx-3 mx-sm-5">
+              <Link
+                activeStyle={activeStyles}
+                to="/blog"
+                className="my-auto mx-3 mx-sm-5"
+              >
                 Blog
               </Link>
-              <Link activeStyle={activeStyles} className="my-auto mx-3 mx-sm-5">
+              <Link
+                activeStyle={activeStyles}
+                className="my-auto mx-3 mx-sm-5"
+                to="/careers"
+              >
                 Carrers
               </Link>
               <Link

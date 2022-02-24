@@ -22,6 +22,12 @@ function FecthFeaturedPosts() {
   if (!featuredPosts) return "Loading...";
   else return featuredPosts;
 }
+function parseHtmlEnteties(str) {
+  return str.replace(/&#([0-9]{1,3});/gi, function (match, numStr) {
+    var num = parseInt(numStr, 10); // read num as normal number
+    return String.fromCharCode(num);
+  });
+}
 
 const FeaturedPosts = () => {
   let featuredPosts = FecthFeaturedPosts();
@@ -36,9 +42,7 @@ const FeaturedPosts = () => {
                 " col-md-4 card-container mx-4 p-5" + (idx === 1 ? " last" : "")
               }
             >
-              <h3 className="mb-3">
-                {decodeURIComponent(post.title.rendered)}
-              </h3>
+              <h3 className="mb-3">{parseHtmlEnteties(post.title.rendered)}</h3>
 
               <p className="description">
                 {post.excerpt.rendered.replace(regex, "")} ...
