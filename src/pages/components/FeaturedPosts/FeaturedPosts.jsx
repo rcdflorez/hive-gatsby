@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Row from "react-bootstrap/Row";
 import "./FeaturedPosts.scss";
+import { Link } from "gatsby";
 
 const FeaturedPostQuery = "posts&&per_page=2&categories=8";
 const regex = /(<([^>]+)>)/gi;
@@ -48,7 +49,18 @@ const FeaturedPosts = () => {
                 {post.excerpt.rendered.replace(regex, "")} ...
               </p>
               <p className="read-more">
-                <a href="/">READ MORE →</a>
+                <Link
+                  id={post.id}
+                  to={`/blog/${
+                    post.link.split(process.env.GATSBY_CMS_BASE_URL)[1]
+                  }`}
+                  state={{
+                    id: post.id,
+                    title: parseHtmlEnteties(post.title.rendered),
+                  }}
+                >
+                  READ MORE →
+                </Link>
               </p>
               <div className="icon"></div>
             </div>

@@ -38,13 +38,13 @@ class Navbar extends React.Component {
         <div className="container ">
           <div className="row ">
             <div className=" col-sm-2 col-12  d-flex justify-content-center justify-content-sm-start py-1">
-              <a href="/">
+              <Link to="/">
                 {this.state.nav ? (
                   <img height="70" src={Logo} className="m-sm-1 my-2" />
                 ) : (
                   <img height="90" src={Logo} className="m-sm-1 my-2" />
                 )}
-              </a>
+              </Link>
             </div>
             <div className=" col-sm-10 col-12 d-flex justify-content-center justify-content-sm-end pb-sm-0 pb-3">
               <Link
@@ -76,6 +76,7 @@ class Navbar extends React.Component {
                 Carrers
               </Link>
               <Link
+                to="/contact-us"
                 activeStyle={activeStyles}
                 className="my-auto mx-3 mx-sm-5 contact-us"
               >

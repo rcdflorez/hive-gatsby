@@ -1,32 +1,32 @@
-div.row.blog-cards{
-  .container{
-    .card-container{
+div.row.blog-cards {
+  .container {
+    .card-container {
       padding: 3rem 2rem;
       line-height: 180%;
       box-shadow: 4px 4px 12px 0px #ececec;
 
-      h5{
+      h5 {
         font-size: 18px;
         font-weight: 700;
         margin-bottom: 1rem;
       }
-      .autor{
+      .autor {
         color: #fec340;
       }
-      .description{
-        height: 200px;
+      .description {
+        height: 100%;
         font-weight: 500;
       }
-      .read-more{
-        margin-top: 1rem;
-        a{
+      .read-more {
+        margin-top: 3rem;
+        a {
           text-decoration: none;
           color: #fec340;
           font-weight: bold;
         }
       }
     }
-    .card-container::before{
+    .card-container::before {
       position: absolute;
       content: "";
       background-image: url(https://hivefs.com/wp-content/uploads/2019/05/hexagon3.png);
@@ -39,7 +39,7 @@ div.row.blog-cards{
       bottom: 0%;
       transition: 0.3s ease;
     }
-    .card-container:hover::before{
+    .card-container:hover::before {
       transform: scale(1.1) rotate(10deg);
     }
   }
