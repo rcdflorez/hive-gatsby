@@ -40,7 +40,7 @@ function parseHtmlEnteties(str) {
   });
 }
 
-var element = document.createElement("div");
+var element = <div className="example-div"></div>;
 
 function decodeHTMLEntities(str) {
   if (str && typeof str === "string") {
