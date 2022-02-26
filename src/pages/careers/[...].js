@@ -30,35 +30,39 @@ function createMarkup(html) {
 }
 
 const CareerDetail = ({ location }) => {
-  const careerDetail = FecthCareerDetails(location.state.id);
+  if (location.state) {
+    const careerDetail = FecthCareerDetails(location.state.id);
 
-  if (careerDetail !== "Loading...") {
-    return (
-      <>
-        <NavBar />
-        <Container fluid className="App m-0">
-          <SubHero title={location.state.title} className="mb-5 pb-5" />
+    if (careerDetail !== "Loading...") {
+      return (
+        <>
+          <NavBar />
+          <Container fluid className="App m-0">
+            <SubHero title={location.state.title} className="mb-5 pb-5" />
 
-          <div
-            style={{ padding: "10rem 10rem" }}
-            className="container"
-            dangerouslySetInnerHTML={createMarkup(
-              careerDetail.content.rendered
-            )}
-          />
-          <ContactUs />
-          <Footer />
-        </Container>
-      </>
-    );
+            <div
+              style={{ padding: "10rem 10rem" }}
+              className="container"
+              dangerouslySetInnerHTML={createMarkup(
+                careerDetail.content.rendered
+              )}
+            />
+            <ContactUs />
+            <Footer />
+          </Container>
+        </>
+      );
+    } else {
+      return (
+        <>
+          <div>
+            <p> Loading... </p>{" "}
+          </div>{" "}
+        </>
+      );
+    }
   } else {
-    return (
-      <>
-        <div>
-          <p> Loading... </p>{" "}
-        </div>{" "}
-      </>
-    );
+    return <p>Fail</p>;
   }
 };
 

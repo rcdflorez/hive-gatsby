@@ -30,33 +30,38 @@ function createMarkup(html) {
 }
 
 const PostDetails = ({ location }) => {
-  const PostDetails = FecthPostDetails(location.state.id);
+  if (location.state) {
+    const PostDetails = FecthPostDetails(location.state.id);
+    if (PostDetails !== "Loading...") {
+      return (
+        <>
+          <NavBar />
+          <Container fluid className="App m-0">
+            <SubHero title={location.state.title} className="mb-5 pb-5" />
 
-  if (PostDetails !== "Loading...") {
-    return (
-      <>
-        <NavBar />
-        <Container fluid className="App m-0">
-          <SubHero title={location.state.title} className="mb-5 pb-5" />
-
-          <div
-            style={{ padding: "10rem 10rem" }}
-            className="container"
-            dangerouslySetInnerHTML={createMarkup(PostDetails.content.rendered)}
-          />
-          <ContactUs />
-          <Footer />
-        </Container>
-      </>
-    );
+            <div
+              style={{ padding: "10rem 10rem" }}
+              className="container"
+              dangerouslySetInnerHTML={createMarkup(
+                PostDetails.content.rendered
+              )}
+            />
+            <ContactUs />
+            <Footer />
+          </Container>
+        </>
+      );
+    } else {
+      return (
+        <>
+          <div>
+            <p> Loading... </p>{" "}
+          </div>{" "}
+        </>
+      );
+    }
   } else {
-    return (
-      <>
-        <div>
-          <p> Loading... </p>{" "}
-        </div>{" "}
-      </>
-    );
+    return <p>Fail</p>;
   }
 };
 
