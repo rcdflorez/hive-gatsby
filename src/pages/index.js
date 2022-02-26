@@ -10,19 +10,24 @@ import HomeSeparator from "./components/Home/Separator/Separator";
 import NavBar from "./components/navBar/NavBar";
 
 const IndexPage = () => {
+  const isSSR = typeof window === "undefined";
   return (
     <>
-      <NavBar />
-      <Container fluid className="App m-0">
-        <MainHero />
+      {!isSSR && (
+        <React.Suspense fallback={<div />}>
+          <NavBar />
+          <Container fluid className="App m-0">
+            <MainHero />
 
-        <OurServicesGrid />
-        <HomeSeparator />
-        <FeaturedPosts />
+            <OurServicesGrid />
+            <HomeSeparator />
+            <FeaturedPosts />
 
-        <ContactUs />
-        <Footer />
-      </Container>
+            <ContactUs />
+            <Footer />
+          </Container>
+        </React.Suspense>
+      )}
     </>
   );
 };
