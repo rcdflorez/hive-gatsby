@@ -34,3 +34,8 @@ div.row.featured-post-cotainer {
     margin: 10rem 0rem;
   }
 }
+@media (max-width: 600px) {
+  div.row.featured-post-cotainer {
+    height: auto;
+  }
+}

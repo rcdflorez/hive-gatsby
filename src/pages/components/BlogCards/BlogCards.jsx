@@ -31,20 +31,8 @@ function FecthBlogPosts() {
     });
 }
 
-var element = <div className="example-div"></div>;
-
-function decodeHTMLEntities(str) {
-  if (str && typeof str === "string") {
-    // strip script/html tags
-    str = str.replace(/<script[^>]*>([\S\s]*?)<\/script>/gim, "");
-    str = str.replace(/<\/?\w(?:[^"'>]|"[^"]*"|'[^']*')*>/gim, "");
-    element.innerHTML = str;
-    str = element.textContent;
-    element.textContent = "";
-  }
-
-  return str;
-}
+const parse = require("html-react-parser");
+const regex = /(<([^>]+)>)/gi;
 
 const BlogCards = () => {
   const authorPost = {
@@ -66,10 +54,12 @@ const BlogCards = () => {
               <div className="cards d-flex flex-column flex-md-row align-items-center flex-wrap">
                 {blogPosts.map((post, idx) => (
                   <Card
-                    title={decodeHTMLEntities(post.title.rendered)}
+                    title={parse(post.title.rendered.replace(regex, ""))}
                     name={post.author_meta.user_nicename}
                     date={post.date}
-                    description={decodeHTMLEntities(post.excerpt.rendered)}
+                    description={parse(
+                      post.excerpt.rendered.replace(regex, "")
+                    )}
                     link={post.link.split(process.env.GATSBY_CMS_BASE_URL)[1]}
                     key={idx}
                     id={post.id}

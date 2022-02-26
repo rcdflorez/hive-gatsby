@@ -42,7 +42,7 @@ const CareerDetail = ({ location }) => {
 
             <div
               style={{ padding: "10rem 10rem" }}
-              className="container"
+              className="container position-container"
               dangerouslySetInnerHTML={createMarkup(
                 careerDetail.content.rendered
               )}

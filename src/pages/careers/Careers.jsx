@@ -5,6 +5,8 @@ import Job from "./job/job";
 
 const regex = /(<([^>]+)>)/gi;
 
+const parse = require("html-react-parser");
+
 function FecthCareers() {
   const [ourCareers, setOurCareers] = useState(null);
 
@@ -39,17 +41,23 @@ function parseHtmlEnteties(str) {
     return String.fromCharCode(num);
   });
 }
+function castDiv(content) {
+  return React.createElement("div", null, content + " *** ");
+}
 
-var element = <div className="example-div"></div>;
+var element = castDiv();
 
 function decodeHTMLEntities(str) {
   if (str && typeof str === "string") {
     // strip script/html tags
     str = str.replace(/<script[^>]*>([\S\s]*?)<\/script>/gim, "");
     str = str.replace(/<\/?\w(?:[^"'>]|"[^"]*"|'[^']*')*>/gim, "");
-    element.innerHTML = str;
+    //element.innerHTML = str;
+    castDiv(str);
+    /*
     str = element.textContent;
-    element.textContent = "";
+    element.textContent = "";*/
+    console.log(element.to);
   }
 
   return str;
@@ -75,14 +83,9 @@ const Careers = () => {
             {careers.map((career, idx) => (
               <Job
                 key={idx}
-                title={decodeHTMLEntities(career.title.rendered).replace(
-                  regex,
-                  ""
-                )}
+                title={parse(career.title.rendered.replace(regex, ""))}
                 id={career.id}
-                description={decodeHTMLEntities(
-                  career.excerpt.rendered
-                ).replace(regex, "")}
+                description={parse(career.excerpt.rendered.replace(regex, ""))}
                 link={career.link.split("/careers/")[1]}
               />
             ))}

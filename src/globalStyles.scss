@@ -11,3 +11,9 @@ h5,
 p {
   margin-bottom: 0;
 }
+@media (max-width: 600px) {
+  div.container.post-container,
+  div.container.position-container {
+    padding: 5rem 1rem !important;
+  }
+}

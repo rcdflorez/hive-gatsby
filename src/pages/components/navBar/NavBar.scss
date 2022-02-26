@@ -67,6 +67,11 @@ img ~ img {
 @media (max-width: 600px) {
   .Nav {
     background-color: #1c2c45;
+    a {
+      color: #232325;
+      text-align: center;
+      padding: 0.25rem 0rem;
+    }
   }
   .Nav__black {
     background: white;

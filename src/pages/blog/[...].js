@@ -41,7 +41,7 @@ const PostDetails = ({ location }) => {
 
             <div
               style={{ padding: "10rem 10rem" }}
-              className="container"
+              className="container post-container"
               dangerouslySetInnerHTML={createMarkup(
                 PostDetails.content.rendered
               )}
