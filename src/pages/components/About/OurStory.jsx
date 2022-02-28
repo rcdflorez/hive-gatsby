@@ -71,7 +71,33 @@ const OurStory = () => {
   } else {
     return (
       <>
-        <p>Loading...</p>
+        <div className="row our-approach-container py-5 my-5   ">
+          <div
+            className="col-6"
+            style={{
+              backgroundImage: `url(${bgImage})`,
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center center",
+              backgroundAttachment: "scroll",
+              backgroundSize: "cover",
+            }}
+          ></div>
+          <div
+            className="col-md-6 mx-auto px-5 text-init py-5  d-flex align-items-center "
+            style={{
+              minHeight: "450px",
+              backgroundColor: "#F5F5F5",
+            }}
+          >
+            <div>
+              <h3 style={{ fontWeight: 400 }} className="py-3"></h3>{" "}
+              <p
+                className="py-3"
+                style={{ fontWeight: 300, lineHeight: "30px" }}
+              ></p>
+            </div>
+          </div>
+        </div>
       </>
     );
   }

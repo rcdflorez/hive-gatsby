@@ -54,9 +54,15 @@ const PostDetails = ({ location }) => {
     } else {
       return (
         <>
-          <div>
-            <p> Loading... </p>{" "}
-          </div>{" "}
+          <NavBar />
+          <Container fluid className="App m-0">
+            <SubHero title={location.state.title} className="mb-5 pb-5" />
+            <div>
+              <p> Loading... </p>
+            </div>
+            <ContactUs />
+            <Footer />
+          </Container>
         </>
       );
     }

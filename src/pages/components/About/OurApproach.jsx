@@ -30,7 +30,6 @@ const OurApproach = () => {
   if (approach !== "Loading...") {
     return (
       <>
-        {" "}
         <div className="row our-approach-container py-5 my-5 ">
           <div className="col-md-7 mx-auto text-center py-5">
             <h3 style={{ fontWeight: 400 }}>
@@ -46,7 +45,15 @@ const OurApproach = () => {
   } else {
     return (
       <>
-        <p>Loading...</p>
+        <div className="row our-approach-container py-5 my-5 ">
+          <div className="col-md-7 mx-auto text-center py-5">
+            <h3 style={{ fontWeight: 400 }}></h3>
+            <p
+              className="py-3"
+              style={{ fontWeight: 300, lineHeight: "30px" }}
+            ></p>
+          </div>
+        </div>
       </>
     );
   }
