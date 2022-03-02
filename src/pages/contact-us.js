@@ -11,7 +11,7 @@ const ContacUsPage = () => {
     <>
       <NavBar />
       <Container fluid className="App m-0">
-        <SubHero title="About Us" />
+        <SubHero title="Contact Us" />
         <ContactUsWhite />
         <Footer />
       </Container>

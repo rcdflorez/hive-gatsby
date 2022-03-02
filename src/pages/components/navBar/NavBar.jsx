@@ -18,7 +18,7 @@ class CustNavbar extends React.Component {
     window.removeEventListener("scroll", null);
   }
   handleScroll = () => {
-    if (window.pageYOffset > 750) {
+    if (window.pageYOffset > 150) {
       if (!this.state.nav) {
         this.setState({ nav: true });
       }
@@ -73,7 +73,7 @@ class CustNavbar extends React.Component {
                   className="my-auto mx-3 mx-sm-5"
                   to="/careers"
                 >
-                  Carrers
+                  Careers
                 </Link>
                 <Link
                   to="/contact-us"
@@ -129,11 +129,10 @@ class CustNavbar extends React.Component {
                   className="my-auto mx-3 mx-sm-5"
                   to="/careers"
                 >
-                  Carrers
+                  Careers
                 </Link>
                 <Link
                   to="/contact-us"
-                  activeStyle={activeStyles}
                   className="my-auto mx-3 mx-sm-5 contact-us"
                 >
                   Contact US

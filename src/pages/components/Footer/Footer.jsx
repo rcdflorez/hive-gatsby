@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./Footer.scss";
+import arrowIcon from "../../../images/right-arrow-icon-7575.png";
 
 const Footer = () => {
   return (
@@ -59,11 +60,7 @@ const Footer = () => {
                     placeholder="Email Address"
                   />
                   <button type="submit">
-                    <img
-                      src="https://www.kindpng.com/picc/m/82-823128_transparent-right-arrow-icon-png-back-arrow-android.png"
-                      alt=""
-                      width={20}
-                    />
+                    <img src={arrowIcon} alt="" width={20} />
                   </button>
                 </form>
                 <p className="copy">© 2022 Hive Financial Systems</p>

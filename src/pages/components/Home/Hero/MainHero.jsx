@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./MainHero.scss";
 import HiveVideo from "./HIVE-FS-Trailer-small.mp4";
+import { Link } from "gatsby";
 
 const MainHero = () => {
   return (
@@ -18,9 +19,12 @@ const MainHero = () => {
               expertise
             </h6>
             <div className="pt-5 mt-5">
-              <a href="#">
-                <span className="">CONTAC US</span>
-              </a>
+              <Link
+                to="/contact-us"
+                className="my-auto mx-3 mx-sm-5 contact-us"
+              >
+                CONTACT US
+              </Link>
             </div>
           </div>
         </div>
