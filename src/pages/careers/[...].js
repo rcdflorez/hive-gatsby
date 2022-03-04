@@ -58,9 +58,249 @@ const CareerDetail = ({ location }) => {
           <NavBar />
           <Container fluid className="App m-0">
             <SubHero title={location.state.title} className="mb-5 pb-5" />
-
-            <div>
-              <p> Loading... </p>
+            <div className="text-center" style={{ minHeight: "400px" }}>
+              <div
+                style={{ marginTop: "100%" }}
+                class="loader loader--style8 my-auto"
+                title="7"
+              >
+                <svg
+                  version="1.1"
+                  id="Layer_1"
+                  x="0px"
+                  y="0px"
+                  width="50px"
+                  height="60px"
+                  viewBox="0 0 50 60"
+                >
+                  <rect
+                    x="0"
+                    y="10"
+                    width="4"
+                    height="10"
+                    fill="#333"
+                    opacity="0.2"
+                  >
+                    <animate
+                      attributeName="opacity"
+                      attributeType="XML"
+                      values="0.2; 1; .2"
+                      begin="0s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                    <animate
+                      attributeName="height"
+                      attributeType="XML"
+                      values="10; 20; 10"
+                      begin="0s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                    <animate
+                      attributeName="y"
+                      attributeType="XML"
+                      values="10; 5; 10"
+                      begin="0s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                  </rect>
+                  <rect
+                    x="8"
+                    y="10"
+                    width="4"
+                    height="10"
+                    fill="#333"
+                    opacity="0.2"
+                  >
+                    <animate
+                      attributeName="opacity"
+                      attributeType="XML"
+                      values="0.2; 1; .2"
+                      begin="0.15s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                    <animate
+                      attributeName="height"
+                      attributeType="XML"
+                      values="10; 20; 10"
+                      begin="0.15s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                    <animate
+                      attributeName="y"
+                      attributeType="XML"
+                      values="10; 5; 10"
+                      begin="0.15s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                  </rect>
+                  <rect
+                    x="16"
+                    y="10"
+                    width="4"
+                    height="10"
+                    fill="#333"
+                    opacity="0.2"
+                  >
+                    <animate
+                      attributeName="opacity"
+                      attributeType="XML"
+                      values="0.2; 1; .2"
+                      begin="0.3s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                    <animate
+                      attributeName="height"
+                      attributeType="XML"
+                      values="10; 20; 10"
+                      begin="0.3s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                    <animate
+                      attributeName="y"
+                      attributeType="XML"
+                      values="10; 5; 10"
+                      begin="0.3s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                  </rect>
+                </svg>
+              </div>
+            </div>
+            <ContactUs />
+            <Footer />
+          </Container>
+        </>
+      );
+      return (
+        <>
+          <NavBar />
+          <Container fluid className="App m-0">
+            <SubHero title={location.state.title} className="mb-5 pb-5" />
+            <div className="text-center" style={{ minHeight: "400px" }}>
+              <div
+                style={{ marginTop: "100%" }}
+                class="loader loader--style8 my-auto"
+                title="7"
+              >
+                <svg
+                  version="1.1"
+                  id="Layer_1"
+                  x="0px"
+                  y="0px"
+                  width="50px"
+                  height="60px"
+                  viewBox="0 0 50 60"
+                >
+                  <rect
+                    x="0"
+                    y="10"
+                    width="4"
+                    height="10"
+                    fill="#333"
+                    opacity="0.2"
+                  >
+                    <animate
+                      attributeName="opacity"
+                      attributeType="XML"
+                      values="0.2; 1; .2"
+                      begin="0s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                    <animate
+                      attributeName="height"
+                      attributeType="XML"
+                      values="10; 20; 10"
+                      begin="0s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                    <animate
+                      attributeName="y"
+                      attributeType="XML"
+                      values="10; 5; 10"
+                      begin="0s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                  </rect>
+                  <rect
+                    x="8"
+                    y="10"
+                    width="4"
+                    height="10"
+                    fill="#333"
+                    opacity="0.2"
+                  >
+                    <animate
+                      attributeName="opacity"
+                      attributeType="XML"
+                      values="0.2; 1; .2"
+                      begin="0.15s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                    <animate
+                      attributeName="height"
+                      attributeType="XML"
+                      values="10; 20; 10"
+                      begin="0.15s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                    <animate
+                      attributeName="y"
+                      attributeType="XML"
+                      values="10; 5; 10"
+                      begin="0.15s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                  </rect>
+                  <rect
+                    x="16"
+                    y="10"
+                    width="4"
+                    height="10"
+                    fill="#333"
+                    opacity="0.2"
+                  >
+                    <animate
+                      attributeName="opacity"
+                      attributeType="XML"
+                      values="0.2; 1; .2"
+                      begin="0.3s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                    <animate
+                      attributeName="height"
+                      attributeType="XML"
+                      values="10; 20; 10"
+                      begin="0.3s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                    <animate
+                      attributeName="y"
+                      attributeType="XML"
+                      values="10; 5; 10"
+                      begin="0.3s"
+                      dur="0.6s"
+                      repeatCount="indefinite"
+                    />
+                  </rect>
+                </svg>
+              </div>
             </div>
             <ContactUs />
             <Footer />

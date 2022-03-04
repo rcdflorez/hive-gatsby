@@ -18,17 +18,7 @@ function FecthBlogPosts() {
       });
   }, []);
   if (!ourBlogPosts) return "Loading...";
-  else
-    return ourBlogPosts.sort(function (a, b) {
-      if (a.id > b.id) {
-        return 1;
-      }
-      if (a.id < b.id) {
-        return -1;
-      }
-      // a must be equal to b
-      return 0;
-    });
+  else return ourBlogPosts;
 }
 
 const parse = require("html-react-parser");
