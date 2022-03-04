@@ -97,8 +97,8 @@ class CustNavbar extends React.Component {
                 <Link to="/">
                   {this.state.nav ? (
                     <img
-                      height="70"
-                      width="70"
+                      height="70px"
+                      width="70px"
                       src={Logo}
                       className="m-sm-1 my-2"
                     />
