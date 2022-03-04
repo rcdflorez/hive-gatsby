@@ -42,7 +42,7 @@ class CustNavbar extends React.Component {
         <Navbar className="d-md-none Nav w-100 " bg="light" expand="lg">
           <Container fluid>
             <Navbar.Brand href="#">
-              <img height="70" src={Logo} className="m-sm-1 my-2" />
+              <img height="70" width="70" src={Logo} className="m-sm-1 my-2" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbar" />
             <Navbar.Collapse id="navbar" className="h-100">
@@ -96,9 +96,19 @@ class CustNavbar extends React.Component {
               <div className=" col-sm-2 col-12  d-flex justify-content-center justify-content-sm-start py-1">
                 <Link to="/">
                   {this.state.nav ? (
-                    <img height="70" src={Logo} className="m-sm-1 my-2" />
+                    <img
+                      height="70"
+                      width="70"
+                      src={Logo}
+                      className="m-sm-1 my-2"
+                    />
                   ) : (
-                    <img height="90" src={Logo} className="m-sm-1 my-2" />
+                    <img
+                      height="90"
+                      width="90"
+                      src={Logo}
+                      className="m-sm-1 my-2"
+                    />
                   )}
                 </Link>
               </div>
