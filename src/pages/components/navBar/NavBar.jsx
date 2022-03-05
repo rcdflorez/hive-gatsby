@@ -42,7 +42,12 @@ class CustNavbar extends React.Component {
         <Navbar className="d-md-none Nav w-100 " bg="light" expand="lg">
           <Container fluid>
             <Navbar.Brand href="#">
-              <img height="70" width="70" src={Logo} className="m-sm-1 my-2" />
+              <img
+                height="70px"
+                width="70px"
+                src={Logo}
+                className="m-sm-1 my-2"
+              />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbar" />
             <Navbar.Collapse id="navbar" className="h-100">
@@ -104,8 +109,8 @@ class CustNavbar extends React.Component {
                     />
                   ) : (
                     <img
-                      height="90"
-                      width="90"
+                      height="90px"
+                      width="90px"
                       src={Logo}
                       className="m-sm-1 my-2"
                     />
