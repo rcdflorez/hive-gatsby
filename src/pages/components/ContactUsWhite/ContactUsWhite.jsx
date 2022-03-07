@@ -11,7 +11,11 @@ const ContactUsWhite = () => {
             Get in touch and we'll get back to you as soon as we can. We look
             forward to hearing from you!
           </h3>
-          <form action="" className="form-contatcUs col-12 col-lg-10">
+          <form
+            action="https://formspree.io/f/xyyojleb"
+            method="POST"
+            className="form-contatcUs col-12 col-lg-10"
+          >
             <div className="user-data d-md-flex">
               <input
                 type="text"
@@ -22,7 +26,7 @@ const ContactUsWhite = () => {
               />
               <input
                 type="email"
-                name="formEmail"
+                name="_replyto"
                 id="formEmail"
                 placeholder="Email"
                 className=" mb-3"
@@ -35,6 +39,7 @@ const ContactUsWhite = () => {
               rows="10"
               placeholder="Message"
             ></textarea>
+            <input type="text" name="_gotcha" style={{ display: "none" }} />
             <button type="submit" className="d-flex align-self-end mt-3">
               SUBMIT
             </button>

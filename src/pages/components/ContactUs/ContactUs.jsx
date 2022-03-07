@@ -9,7 +9,11 @@ const ContactUs = () => {
       <Row className="contactUs-post-cotainer ">
         <div className="container">
           <h3 className="text-center">Contact Us</h3>
-          <form action="" className="form-contatcUs">
+          <form
+            action="https://formspree.io/f/xyyojleb"
+            method="POST"
+            className="form-contatcUs"
+          >
             <div className="user-data d-md-flex">
               <input
                 type="text"
@@ -20,7 +24,7 @@ const ContactUs = () => {
               />
               <input
                 type="email"
-                name="formEmail"
+                name="_replyto"
                 id="formEmail"
                 placeholder="Email"
                 className=" mb-3"
@@ -33,6 +37,7 @@ const ContactUs = () => {
               rows="10"
               placeholder="Message"
             ></textarea>
+            <input type="text" name="_gotcha" style={{ display: "none" }} />
             <button type="submit" className="d-flex align-self-end mt-3">
               SUBMIT
             </button>
