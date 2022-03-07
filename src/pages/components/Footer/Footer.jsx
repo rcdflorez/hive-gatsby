@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./Footer.scss";
 import arrowIcon from "../../../images/right-arrow-icon-7575.png";
+import hiveLogo from "../../../images/hive_fs_logo_Final_white-284x300.png";
 
 const Footer = () => {
   return (
@@ -12,11 +13,7 @@ const Footer = () => {
           <Row className="container m-auto p-0 my-5">
             <div className="footer-logo col-12 col-lg-3 p-0">
               <div className="container-logo">
-                <img
-                  src="https://hivefs.com/wp-content/uploads/2019/05/hive_fs_logo_Final_white-284x300.png"
-                  alt=""
-                  width={132}
-                />
+                <img src={hiveLogo} alt="" width={132} />
               </div>
             </div>
             <div className="footer-container col-12 col-lg-9 p-md-0 d-flex flex-column flex-md-row justity-content-center justify-content-md-between align-items-center align-items-md-start">
