@@ -7,7 +7,7 @@ import Footer from "./components/Footer/Footer";
 
 import MainHero from "./components/Home/Hero/MainHero";
 import HomeSeparator from "./components/Home/Separator/Separator";
-import NavBar from "./components/navBar/NavBar";
+import NavBar from "./components/navBar/_NewNavBar";
 import { Helmet } from "react-helmet";
 
 const IndexPage = () => {
