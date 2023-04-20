@@ -1,0 +1,50 @@
+.cards-skills{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url('../../../images/Group80.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 70vh;
+  justify-content: center;
+  align-items: end;
+}
+.card-skills{
+  max-width: 413px;
+  color: #fff;
+  padding: 0;
+  margin-top: 1rem;
+}
+.card-skills .card-skills-header{
+  background-image: url("../../../images/hexagon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  margin: auto;
+  
+}
+.card-skills .card-skills-header .title{
+  margin: 0;
+  margin-top: 0.5rem;
+  font-size: smaller;
+}
+.card-skills .card-skills-header .icon{
+  height: 45px;
+  margin: 0.5rem 0;
+}
+
+.card-skills .card-skills-body{
+  margin-top: 2rem;
+  background-color: #918444;
+  padding: 2rem;
+  padding-bottom: 4rem;
+}
+.card-skills .card-skills-body p{
+  margin: 0;
+}

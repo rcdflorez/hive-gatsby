@@ -1,15 +1,21 @@
-div.row.services-container.cards{
+div .row.cards-main{
 
-  background-image: url('../../../images/Group68.png');
+  background-image: url('../../../images/Group91.png');
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-items:start;
-  gap: 2rem 6rem;
+  align-items:center;
   min-height: 70vh;
-  flex-wrap: wrap;
+  padding: 4rem 0;
   
+  .container-cards{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 2rem 6rem;
+  }
 
   .cards-title{
     color: #fff;
@@ -19,7 +25,7 @@ div.row.services-container.cards{
   
 
   .hive-card{
-    max-width: 350px;
+    width: 350px;
     background-color: #fff;
     border-radius: 5px;
     border: 1px solid #000;
@@ -65,4 +71,22 @@ div.row.services-container.cards{
     font-weight: 300;
     margin: 0 0 .5rem .5rem;
   }
+
+  .hive-card .header .hexagon{
+    background-image: url(../../../images/hexagon.png);
+    z-index: 10;
+    position: absolute;
+    right: 0.5rem;
+    width: 60px;
+    height: 60px;
+    background-size: 60px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hive-card .header .hexagon .icon{
+    height: 35px;
+  }
+
 }

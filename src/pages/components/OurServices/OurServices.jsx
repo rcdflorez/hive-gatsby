@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./OurServices.scss";
+import CardServices from "./CardServices";
 
 const regex = /(<([^>]+)>)/gi;
 
 function FecthServices() {
   const [ourServices, setOurServices] = useState(null);
-
+  
   useEffect(() => {
     fetch(
       `${process.env.GATSBY_CMS_BASE_URL}${process.env.GATSBY_CMS_API_URL}our_services`
@@ -23,36 +24,33 @@ function FecthServices() {
   else return ourServices;
 }
 
+const simulatedData = [
+  {
+    title: "PEOPLE",
+    data: "Loan Origination System with Integrated automated bank transaction scoring and automated credit decisions utilizina traditional statistical modeling."
+  },
+  {
+    title: "HIVE OS",
+    data: "Loan Origination System with Integrated automated bank transaction scoring and automated credit decisions utilizina traditional statistical modeling techniques and recurrent neural networks (ILSTM / RIN)."
+  },
+  {
+    title: "MARKETING",
+    data: "Perfect mix of customer acquisitions channels that serve your business."
+  },
+]
+
 const OurServicesGrid = () => {
   let services = FecthServices();
   if (services !== "Loading...") {
     return (
-      <>
-        <h3 className="text-center pt-5">Our services</h3>
-        <Row className="services-container container pt-5 mt-5 px-5 mx-auto">
-          {services.map((service, idx) => (
-            <Col className="service-card mx-3 p-5 px-4" key={idx}>
-              <Row className="img-container">
-                <img
-                  className="mx-auto"
-                  src={service.featured_image_src}
-                  alt=""
-                />
-              </Row>
-              <Row className="mx-auto">
-                <h5 className="text-center py-4 service-title">
-                  {service.title.rendered}
-                </h5>
-              </Row>
-              <Row className="mx-auto">
-                <p className="service-description">
-                  {service.excerpt.rendered.replace(regex, "")}
-                </p>
-              </Row>
-            </Col>
-          ))}
+      <Row>
+        <Row className="services-container cards container-fluid d-flex text-center text-md-start py-5 px-5 mx-auto">
+          <h3 className="pt-5 cards-title">WHAT WE DO</h3>
+          {simulatedData.map((card, i) =>
+            <CardServices key={i} title={card.title} data={card.data}/>)
+          }
         </Row>
-      </>
+      </Row>
     );
   } else {
     return <p>Loading...</p>;

@@ -9,6 +9,8 @@ import MainHero from "./components/Home/Hero/MainHero";
 import HomeSeparator from "./components/Home/Separator/Separator";
 import NavBar from "./components/navBar/_NewNavBar";
 import { Helmet } from "react-helmet";
+import OurSkills from "./components/OurHabilies/OurSkills";
+import WeAreCards from "./components/WeAreCards/WeAreCards";
 
 const IndexPage = () => {
   const isSSR = typeof window === "undefined";
@@ -26,8 +28,10 @@ const IndexPage = () => {
             <MainHero />
 
             <OurServicesGrid />
-            <HomeSeparator />
-            <FeaturedPosts />
+            <OurSkills />
+            <WeAreCards />
+            {/* <HomeSeparator /> */}
+            {/* <FeaturedPosts /> */}
 
             <ContactUs />
             <Footer />
