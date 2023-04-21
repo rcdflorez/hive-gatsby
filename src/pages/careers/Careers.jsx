@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import "./Careers.scss";
 import Job from "./job/job";
+import { Col, Row } from "react-bootstrap";
 
 const regex = /(<([^>]+)>)/gi;
 
@@ -74,12 +75,8 @@ const Careers = () => {
   if (careers !== "Loading...") {
     return (
       <>
-        <div className="Careers-cotainer container px-0 my-5">
-          <div className="job-container-item col-12 col-lg-10 m-auto">
-            <h3 className="text-center">
-              Interested in working with a dynamic and collaborative team? Check
-              out our open positions!
-            </h3>
+        <Row className="Careers-cotainer p-0">
+          <div className="job-container-item">
             {careers.map((career, idx) => (
               <Job
                 key={idx}
@@ -90,21 +87,13 @@ const Careers = () => {
               />
             ))}
           </div>
-        </div>
+        </Row>
       </>
     );
   } else {
     return (
       <>
-        <div className="Careers-cotainer container px-0 my-5">
-          <div className="job-container-item col-12 col-lg-10 m-auto">
-            <h3 className="text-center">
-              Interested in working with a dynamic and collaborative team? Check
-              out our open positions!
-            </h3>
-            <Job title={job.title} description={job.description} />
-          </div>
-        </div>
+        Loading...
       </>
     );
   }

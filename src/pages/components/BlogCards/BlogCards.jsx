@@ -41,7 +41,7 @@ const BlogCards = () => {
         <Row className="blog-cards cards-cotainer">
           <div className="container my-5">
             <div className="container">
-              <div className="cards d-flex flex-column flex-md-row align-items-center flex-wrap">
+              <div className="cards">
                 {blogPosts.map((post, idx) => (
                   <Card
                     title={parse(post.title.rendered.replace(regex, ""))}
