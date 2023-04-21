@@ -33,7 +33,7 @@ const IndexPage = () => {
             {/* <HomeSeparator /> */}
             {/* <FeaturedPosts /> */}
 
-            <ContactUs />
+            {/* <ContactUs /> */}
             <Footer />
           </Container>
         </React.Suspense>
