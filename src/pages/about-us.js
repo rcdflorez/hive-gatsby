@@ -17,7 +17,7 @@ const AboutUs = () => {
         <OurApproach />
         <OurStory />
         <Team />
-        <ContactUs />
+        {/* <ContactUs /> */}
         <Footer />
       </Container>
     </>
