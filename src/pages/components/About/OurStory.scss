@@ -1,0 +1,19 @@
+@media screen and (max-width: 768px) {
+  div.our-history{
+    .bg-image{
+      min-height: 400px;
+    }
+    div.copy{
+      // padding: 1rem;
+      width: 100%;
+      text-align: center;
+      h3.custom-title{
+        font-size: 32px;
+      }
+      span.custom-copy{
+        letter-spacing: 0;
+        font-size: 20px;
+      }
+    }
+  }
+}

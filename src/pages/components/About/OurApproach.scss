@@ -1,6 +1,6 @@
-div.main-hero-container {
-  min-height: 100vh;
-  background-image: url("JPoWNn.tif.png");
+div.ourApproach {
+  min-height: 75vh;
+  background-image: url("./Group4.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -26,8 +26,29 @@ div.main-hero-container {
   }
 
   div.copy{
-    background-color: #918444;
+    background-color: #8F8E8C;
     padding: 2rem;
     padding-left: 5rem;  
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  div.ourApproach {
+    background-position: inherit;
+    background-size: 200%;
+    min-height: 90vh;
+    div.copy{
+      padding: 1rem;
+      width: 100%;
+      text-align: center;
+      h3.custom-title{
+        font-size: 32px;
+      }
+      span.custom-copy{
+        letter-spacing: 0;
+        font-size: 20px;
+      }
+    }
   }
 }

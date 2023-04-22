@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Row from "react-bootstrap/Row";
 import Member from "./Member/Member";
 import "./Team.scss";
-import Hexagon from '../../../../images/Hexagon.png'
 import TeamImg from '../../../../images/team.png'
 
 const regex = /(<([^>]+)>)/gi;
@@ -18,6 +17,7 @@ function FecthTeamMembers() {
         return response.json();
       })
       .then((json) => {
+        console.log(json);
         setTeamMembers(json);
       });
   }, []);

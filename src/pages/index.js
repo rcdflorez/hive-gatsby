@@ -12,6 +12,8 @@ import { Helmet } from "react-helmet";
 
 import WeAreCards from "./components/WeAreCards/WeAreCards";
 import OurSkills from "./components/OurSkills/OurSkills";
+import NewsEvents from "./components/NewsEvents/NewsEvents";
+import WhoWeAre from "./components/WhoWeAre/WhoWeAre";
 
 const IndexPage = () => {
   const isSSR = typeof window === "undefined";
@@ -30,6 +32,8 @@ const IndexPage = () => {
 
             <OurServicesGrid />
             <OurSkills />
+            <NewsEvents />
+            <WhoWeAre />
             <WeAreCards />
             {/* <HomeSeparator /> */}
             {/* <FeaturedPosts /> */}

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import bgImage from "../../../images/iStock-1003964770-1600x1000.jpeg";
+import bgImage from "./Group87.png";
+import './OurStory.scss'
 
 const regex = /(<([^>]+)>)/gi;
 function FecthStory() {
@@ -32,31 +33,33 @@ const OurStory = () => {
     return (
       <>
         {" "}
-        <div className="row our-approach-container py-5 my-5   ">
+        <div className="row our-history" style={{flexDirection: 'row-reverse'}}>
           <div
-            className="col-6"
+            className="col-12 col-md-6 bg-image"
             style={{
               backgroundImage: `url(${bgImage})`,
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center center",
               backgroundAttachment: "scroll",
               backgroundSize: "cover",
-            }}
-          ></div>
+            }}>
+          </div>
           <div
-            className="col-md-6 mx-auto px-5 text-init py-5  d-flex align-items-center "
+            className="col-md-6 mx-auto px-md-5 text-init py-md-5  d-flex align-items-center "
             style={{
               minHeight: "450px",
-              backgroundColor: "#F5F5F5",
+              backgroundColor: "rgb(143 132 70)",
+              color: 'white'
             }}
           >
-            <div>
-              <h3 style={{ fontWeight: 400 }} className="py-3">
+            <div className="copy">
+              <h3 style={{ fontWeight: 400 }} className="pb-3 py-md-3 custom-title">
                 {parseHtmlEnteties(approach.title.rendered).replace(regex, "")}
               </h3>{" "}
               <p
-                className="py-3"
-                style={{ fontWeight: 300, lineHeight: "30px" }}
+                className="py-3 custom-copy"
+                style={
+                  { fontWeight: 300, lineHeight: "30px", letterSpacing: "1px" }}
               >
                 {parseHtmlEnteties(approach.content.rendered).replace(
                   regex,
@@ -71,33 +74,7 @@ const OurStory = () => {
   } else {
     return (
       <>
-        <div className="row our-approach-container py-5 my-5   ">
-          <div
-            className="col-6"
-            style={{
-              backgroundImage: `url(${bgImage})`,
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center center",
-              backgroundAttachment: "scroll",
-              backgroundSize: "cover",
-            }}
-          ></div>
-          <div
-            className="col-md-6 mx-auto px-5 text-init py-5  d-flex align-items-center "
-            style={{
-              minHeight: "450px",
-              backgroundColor: "#F5F5F5",
-            }}
-          >
-            <div>
-              <h3 style={{ fontWeight: 400 }} className="py-3"></h3>{" "}
-              <p
-                className="py-3"
-                style={{ fontWeight: 300, lineHeight: "30px" }}
-              ></p>
-            </div>
-          </div>
-        </div>
+        
       </>
     );
   }

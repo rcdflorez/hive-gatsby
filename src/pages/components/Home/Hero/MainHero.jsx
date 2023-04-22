@@ -8,7 +8,7 @@ const MainHero = () => {
     <>
       <div className="main-hero-container row position-relative">
 
-        <div className="col-md-6 position-absolute bottom-0 my-4 p-5 copy">
+        <div className="col-md-6 position-absolute bottom-0 my-4 copy">
           ________ <br></br><br></br>
 
 

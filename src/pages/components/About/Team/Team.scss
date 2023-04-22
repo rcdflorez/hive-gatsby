@@ -2,13 +2,15 @@ div.row.team-cards-cotainer {
   background-color: #AFA79C;
   color: #fff;
   .container {
+    .members{
+      gap: 4rem 2rem;
+    }
     .team-text{
       max-width: 500px;
       margin: 1rem auto;
       margin-top: 2rem;
     }
 
-    //new styles
     .cards-title{
       color: #fff;
       margin: 0 1rem;
@@ -78,11 +80,14 @@ div.row.team-cards-cotainer {
       text-align: start;
       .photo img{
         width: 100%;
-        height: 250px;
+        height: 245px;
         object-fit: cover;
       }
       .info{
         padding: 1rem;
+        p{
+          font-size: 14px;
+        }
         h2 {
           color: #000;
           font-weight: 500;
@@ -99,6 +104,14 @@ div.row.team-cards-cotainer {
     .container {
       .member-card {
         width: 50%;
+      }
+      .team-title{
+        h2{
+          font-size: 32px;
+        }
+      }
+      .team-text{
+        padding: 0 2rem;
       }
     }
   }
