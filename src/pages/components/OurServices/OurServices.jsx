@@ -7,23 +7,22 @@ import CardServices from "./CardServices";
 const regex = /(<([^>]+)>)/gi;
 
 function FecthServices() {
-  const [ourServices, setOurServices] = useState(null);
-  const simulatedData = [
-    {
-      title: "PEOPLE",
-      data: "Loan Origination System with Integrated automated bank transaction scoring and automated credit decisions utilizina traditional statistical modeling."
-    },
-    {
-      title: "HIVE OS",
-      data: "Loan Origination System with Integrated automated bank transaction scoring and automated credit decisions utilizina traditional statistical modeling techniques and recurrent neural networks (ILSTM / RIN)."
-    },
-    {
-      title: "MARKETING",
-      data: "Perfect mix of customer acquisitions channels that serve your business."
-    },
-  ]
+  const [ourServices, setOurServices] = useState([]);
+
   useEffect(() => {
-    setOurServices(simulatedData);
+
+    fetch(
+      `${process.env.GATSBY_CMS_BASE_URL}${process.env.GATSBY_CMS_API_URL}our_services`
+    )
+      .then((response) => {
+        return response.json();
+      })
+      .then((json) => {
+        console.log(json);
+        setOurServices(json);
+      });
+
+    
   }, []);
   if (!ourServices) return "Loading...";
   else return ourServices;
@@ -37,7 +36,7 @@ const OurServicesGrid = () => {
         <Row className="services-container cards container-fluid d-flex text-center text-md-start py-5 px-5 mx-auto">
           <h3 className="pt-5 cards-title">WHAT WE DO</h3>
           {services.map((card, i) =>
-            <CardServices key={i} title={card.title} data={card.data}/>)
+            <CardServices key={i} title={card.title.rendered} data={card.excerpt.rendered}/>)
           }
         </Row>
       </Row>

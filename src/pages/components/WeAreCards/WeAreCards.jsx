@@ -5,23 +5,6 @@ import WeAreCard from './WeAreCard'
 import hand from '../../../images/hand.png'
 import key from '../../../images/key.png'
 import cup from '../../../images/cup.png'
-const simulatedData = [
-  {
-    title: "PEOPLE",
-    img: hand,
-    data: "First we support the individual and the collective"
-  },
-  {
-    title: "ORICESS",
-    img: key,
-    data: "We build the quality and scalability through intentional improvement of processes"
-  },
-  {
-    title: "PERFORMANCE",
-    img: cup,
-    data: "Results are the guide of direction"
-  }
-]
 
 const WeAreCards = () => {
 
@@ -29,6 +12,23 @@ const WeAreCards = () => {
 
   useEffect(()=>{
     //switch to fetch
+    const simulatedData = [
+      {
+        title: "PEOPLE",
+        img: hand,
+        data: "First we support the individual and the collective"
+      },
+      {
+        title: "PROCESS",
+        img: key,
+        data: "We build the quality and scalability through intentional improvement of processes"
+      },
+      {
+        title: "PERFORMANCE",
+        img: cup,
+        data: "Results are the guide of direction"
+      }
+    ]
     setDataCard(simulatedData)
   }, [])
 

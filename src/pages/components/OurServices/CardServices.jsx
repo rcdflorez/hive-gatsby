@@ -1,6 +1,7 @@
 import React from 'react'
 
 const CardServices = ({title, data}) => {
+  const datanNormalized = data.replace('<p>', '').replace('</p>', '')
   return (
     <div className="hive-card">
       <div className="header">
@@ -12,7 +13,7 @@ const CardServices = ({title, data}) => {
           <h3>{title}</h3>
         </div>
         <div className="info">
-          {data}
+          {datanNormalized}
         </div>
       </div>
     </div>

@@ -17,6 +17,7 @@ function FecthBlogPosts() {
         setOurBlogPosts(json);
       });
   }, []);
+
   if (!ourBlogPosts) return "Loading...";
   else return ourBlogPosts;
 }
@@ -50,6 +51,7 @@ const BlogCards = () => {
                     description={parse(
                       post.excerpt.rendered.replace(regex, "")
                     )}
+                    image={post.featured_image_src}
                     link={post.link.split(process.env.GATSBY_CMS_BASE_URL)[1]}
                     key={idx}
                     id={post.id}
