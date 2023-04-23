@@ -1,7 +1,9 @@
-import React from 'react'
+import React from "react";
 
-const CardServices = ({title, data}) => {
-  const datanNormalized = data.replace('<p>', '').replace('</p>', '')
+const CardServices = ({ title, data }) => {
+  const datanNormalized = data
+    ? data.replace("<p>", "").replace("</p>", "")
+    : "Default";
   return (
     <div className="hive-card">
       <div className="header">
@@ -12,12 +14,10 @@ const CardServices = ({title, data}) => {
         <div className="title">
           <h3>{title}</h3>
         </div>
-        <div className="info">
-          {datanNormalized}
-        </div>
+        <div className="info">{datanNormalized}</div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CardServices
+export default CardServices;

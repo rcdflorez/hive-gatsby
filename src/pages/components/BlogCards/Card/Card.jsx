@@ -2,17 +2,20 @@ import React from "react";
 import { Link } from "gatsby";
 
 const Card = (props) => {
-  const separateTitle= props.title.split(":")
+  const separateTitle = props.title ? props.title.split(":") : "Default";
+
   return (
     <div className="position-relative card-container row">
       <div className="card-data col-12 col-md-8">
         <p className="type">NEWS</p>
-        {separateTitle.length > 1
-          ? <h5>{separateTitle[0]}: <br /> {separateTitle[1]}</h5>
-          : <h5>{props.title}</h5>
-        }
-        
-        
+        {separateTitle.length > 1 ? (
+          <h5>
+            {separateTitle[0]}: <br /> {separateTitle[1]}
+          </h5>
+        ) : (
+          <h5>{props.title}</h5>
+        )}
+
         <p className="description">{props.description}</p>
         <p className="autor mt-3">
           {"AUTHOR: " + props.name} | {props.date}
@@ -32,7 +35,6 @@ const Card = (props) => {
       {/* <div className="card-image col-12 col-md-4">
         <img src={props.image} alt="" />
       </div> */}
-
     </div>
   );
 };
