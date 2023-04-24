@@ -10,11 +10,7 @@ const NewsEvents = () => {
           <h2>NEWS & EVENTS</h2>
         </div>
         <div className="news-info">
-          <p>
-            HFS not only assesses people's ability to apply 
-            in just seconds, but also has the ability to procure 
-            the micro-loans In lust a few minutes.
-          </p>
+          <p> Learn about upcoming events </p>
         </div>
       </Col>
       <Col className='news-image col-12 col-lg-6'>

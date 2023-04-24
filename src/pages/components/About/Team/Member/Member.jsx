@@ -26,11 +26,6 @@ const Member = (props) => {
                 </a>
               : <h2>{props.name}</h2>
             }
-          <p>
-            Lorem ipsum dolor sit 
-            amet consectetur adipisicing elit. 
-            Veniam, voluptatibus expedita quidem.
-          </p>
         </div>
       </div>
     </div>

@@ -19,9 +19,13 @@ const Footer = () => {
           <div className="footer-title text-center text-md-start">
             <h2>JOIN OUR <br /> TALENT COMMUNITY</h2>
           </div>
-          <div className="footer-text">
-            <p>HFS not only assesses people's ability to apply in just seconds, but also has the ability to procure the micro-loans In lust a few minutes.</p>
-          </div>
+          {/* <div className="footer-text">
+            <p>
+              HFS not only assesses people's ability to apply 
+              in just seconds, but also has the ability to 
+              procure the micro-loans In lust a few minutes.
+            </p>
+          </div> */}
           <div className="footer-contactUs">
             <Form />
           </div>

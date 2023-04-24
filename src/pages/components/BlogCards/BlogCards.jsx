@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Row from "react-bootstrap/Row";
 import "./BlogCards.scss";
 import Card from "./Card/Card";
+import imageBlog from '../../../images/MaskGroup6.png'
 
 function FecthBlogPosts() {
   const [ourBlogPosts, setOurBlogPosts] = useState(null);
@@ -51,7 +52,7 @@ const BlogCards = () => {
                     description={parse(
                       post.excerpt.rendered.replace(regex, "")
                     )}
-                    image={post.featured_image_src}
+                    image={imageBlog}
                     link={post.link.split(process.env.GATSBY_CMS_BASE_URL)[1]}
                     key={idx}
                     id={post.id}

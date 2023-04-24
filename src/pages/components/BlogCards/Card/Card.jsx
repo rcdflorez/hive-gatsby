@@ -29,12 +29,12 @@ const Card = (props) => {
             Read More →
           </Link>
         </p>
-        <div className="icon"></div>
+        {/* <div className="icon"></div> */}
       </div>
 
-      {/* <div className="card-image col-12 col-md-4">
+      <div className="card-image col-12 col-md-4">
         <img src={props.image} alt="" />
-      </div> */}
+      </div>
     </div>
   );
 };

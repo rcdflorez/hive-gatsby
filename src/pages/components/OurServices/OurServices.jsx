@@ -18,7 +18,6 @@ function FecthServices() {
         return response.json();
       })
       .then((json) => {
-        console.log(json);
         setOurServices(json);
       });
 

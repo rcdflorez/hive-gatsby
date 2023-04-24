@@ -16,10 +16,10 @@ const WhoWeAre = () => {
         </div>
         <div className="weAre-info">
           <p>
-          Hive Financial Systems' core advantages lie in our 
-          leadership team's extensive industry experience and use 
-          of cutting-edge tecnology for marketing. underwriting, 
-          scoring and loan management.
+          HFS core advantage lies in our leadership team 
+          extensive experience. We are supported with cutting 
+          edge technology for marketing, underwriting, scoring
+           and loan management. 
           </p>
         </div>
         <div className="d-flex justify-content-center justify-content-lg-end">

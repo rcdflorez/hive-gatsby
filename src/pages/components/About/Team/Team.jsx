@@ -17,7 +17,6 @@ function FecthTeamMembers() {
         return response.json();
       })
       .then((json) => {
-        console.log(json);
         setTeamMembers(json);
       });
   }, []);

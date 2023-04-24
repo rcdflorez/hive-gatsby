@@ -15,9 +15,11 @@ const MainHero = () => {
           <h3 className="custom-title"> EMPOWER & ELEVATE </h3> <br></br>
 
 
-          <span className="custom-copy"> The Hive works together to empower each 
-other with micro-finance tools & techology
-to Elevate each other's financial health.</span>
+          <span className="custom-copy"> 
+            At Hive Financial Systems we work together to empower 
+            each other with microfinance tools and technology to 
+            elevate each other´s financial health. 
+          </span>
         </div>
 
       </div>

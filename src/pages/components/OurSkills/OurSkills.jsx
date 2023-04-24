@@ -17,17 +17,17 @@ const OurSkills = () => {
       {
         title: "FAST",
         img: hourglass,
-        data: "HFS not only assesses people's ability to apply in just seconds, but also has the ability to procure the micro-loans In lust a few minutes."
+        data: "HFS not only assesses people's feasibility to apply with agility, but also procures microloans in just a few minutes. "
       },
       {
         title: "PURPOSE",
         img: heart,
-        data: "HFS not only assesses people's ability to apply in just seconds, but also has the ability to procure the micro-loans In lust a few minutes."
+        data: "Alterative credit demand for options is there, but the supply is not. HFS brings together decades of industry experience with sophisticated automation and technology expertise."
       },
       {
         title: "EMPOWER",
         img: power,
-        data: "HFS not only assesses people's ability to apply in just seconds, but also has the ability to procure the micro-loans In lust a few minutes."
+        data: "Market entrants will get the skills to underwrite loans in a simple way in order to incorporate massive amounts of public and private data that has been ignored in making credit decision. HFS can secure enough capital to effectively scale."
       }
     ]
     setDataCard(simulatedData)
