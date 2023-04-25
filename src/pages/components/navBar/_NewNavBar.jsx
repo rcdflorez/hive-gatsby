@@ -1,7 +1,7 @@
 import React from "react";
 import "./_NewNavBar.scss";
 import Logo from "./_newLogo.png";
-import MenuIcon from "./_menuIcon.svg"
+import MenuIcon from "./_menuIcon.svg";
 import { Link } from "gatsby";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -49,7 +49,6 @@ class CustNavbar extends React.Component {
                 src={Logo}
                 className="m-sm-1 my-2"
               />
-            
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbar" />
             <Navbar.Collapse id="navbar" className="h-100">
@@ -82,18 +81,10 @@ class CustNavbar extends React.Component {
                 >
                   Careers
                 </Link>
-                <Link
-                  to="/contact-us"
-                  activeStyle={activeStylesMobile}
-                  className="my-auto mx-3 mx-sm-5 "
-                >
-                  Contact US
-                </Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
         </Navbar>
-       
       </>
     );
   }
