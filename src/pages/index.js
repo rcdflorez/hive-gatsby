@@ -35,10 +35,6 @@ const IndexPage = () => {
             <NewsEvents />
             <WhoWeAre />
             <WeAreCards />
-            {/* <HomeSeparator /> */}
-            {/* <FeaturedPosts /> */}
-
-            {/* <ContactUs /> */}
             <Footer />
           </Container>
         </React.Suspense>

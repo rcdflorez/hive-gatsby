@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import NavBar from "./components/navBar/NavBar";
+import NavBar from "./components/navBar/_NewNavBar";
 // import SubHero from "./components/SubHero/SubHero";
 import OurApproach from "./components/About/OurApproach";
 import OurStory from "./components/About/OurStory";
