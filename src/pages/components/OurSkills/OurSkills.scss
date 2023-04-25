@@ -54,7 +54,7 @@
 
 @media screen and (max-width: 825px) {
   .cards-skills{
-    background-size: 100%;
+    background-size: 120%;
     padding-top: 50%;
   }
   .card-skills:first-child::before{
@@ -80,6 +80,11 @@
       margin: auto;
       margin-top: 0;
       text-align: center;
+      padding: 1rem;
+      p{
+        min-height: auto;
+        line-height: inherit;
+      }
     }
   }
 }

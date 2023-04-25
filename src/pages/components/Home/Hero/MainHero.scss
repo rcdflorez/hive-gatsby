@@ -31,3 +31,20 @@ div.main-hero-container {
     padding-left: 5rem;  
   }
 }
+
+@media screen and (max-width: 825px) {
+  div.main-hero-container {
+    min-height: 70vh;
+    background-position: top;
+    background-size: cover;
+    div.copy{
+      padding: 1rem 3rem;
+      .custom-title{
+        font-size: inherit;
+      }
+      .custom-copy{
+        font-size: inherit;
+      }
+    }
+  }
+}

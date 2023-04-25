@@ -8,7 +8,7 @@ const MainHero = () => {
     <>
       <div className="main-hero-container row position-relative">
 
-        <div className="col-md-6 position-absolute bottom-0 my-4 copy">
+        <div className="col-md-6 position-absolute text-center text-md-start bottom-0 my-md-4 copy">
           ________ <br></br><br></br>
 
 
@@ -18,7 +18,7 @@ const MainHero = () => {
           <span className="custom-copy"> 
             At Hive Financial Systems we work together to empower 
             each other with microfinance tools and technology to 
-            elevate each other´s financial health. 
+            elevate each other's financial health. 
           </span>
         </div>
 
