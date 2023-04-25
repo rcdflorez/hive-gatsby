@@ -74,7 +74,41 @@ const OurStory = () => {
   } else {
     return (
       <>
-        
+        {" "}
+        <div className="row our-history" style={{flexDirection: 'row-reverse'}}>
+          <div
+            className="col-12 col-md-6 bg-image"
+            style={{
+              backgroundImage: `url(${bgImage})`,
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center center",
+              backgroundAttachment: "scroll",
+              backgroundSize: "cover",
+            }}>
+          </div>
+          <div
+            className="col-md-6 mx-auto px-md-5 text-init py-md-5  d-flex align-items-center "
+            style={{
+              minHeight: "450px",
+              backgroundColor: "rgb(143 132 70)",
+              color: 'white'
+            }}
+          >
+            <div className="copy">
+              <h3 
+                style={{ fontWeight: 400 }} 
+                className="pb-3 py-md-3 custom-title">
+              </h3>{" "}
+              <p
+                className="py-3 custom-copy"
+                style={
+                  { fontWeight: 300, 
+                    lineHeight: "30px", 
+                    letterSpacing: "1px" }}>
+              </p>
+            </div>
+          </div>
+        </div>
       </>
     );
   }

@@ -77,9 +77,24 @@ const Team = () => {
     );
   } else {
     return (
-      <>
-        <p>Loading...</p>
-      </>
+      <Row className="team-cards-cotainer">
+        <div className="container my-5">
+          <div className="team-title text-center">
+            <div className="hexagon">
+              <img src={TeamImg} alt="" />
+            </div>
+            <h2 className="text-center">Meet the Team</h2>
+          </div>
+          <div className="container text-center p-0">
+            <p className="team-text">
+              Hive Financial Systems' core advantages lie in our leadership
+              team’s extensive industry experience and use of cutting-edge
+              technology for marketing, underwriting, scoring, and loan
+              management.
+            </p>
+          </div>
+        </div>
+      </Row>
     );
   }
 };

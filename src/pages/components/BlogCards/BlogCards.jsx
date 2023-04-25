@@ -46,16 +46,14 @@ const BlogCards = () => {
               <div className="cards">
                 {blogPosts.map((post, idx) => (
                   <Card
+                    id={post.id}
                     title={parse(post.title.rendered.replace(regex, ""))}
                     name={post.author_meta.user_nicename}
                     date={post.date}
-                    description={parse(
-                      post.excerpt.rendered.replace(regex, "")
-                    )}
+                    description={parse(post.excerpt.rendered.replace(regex, ""))}
                     image={imageBlog}
                     link={post.link.split(process.env.GATSBY_CMS_BASE_URL)[1]}
                     key={idx}
-                    id={post.id}
                   />
                 ))}
               </div>
@@ -76,31 +74,14 @@ const BlogCards = () => {
                   name={authorPost.authorName}
                   date={authorPost.date}
                   description={authorPost.description}
-                />
+                  image={imageBlog}/>
                 <Card
                   title={authorPost.title}
                   name={authorPost.authorName}
                   date={authorPost.date}
                   description={authorPost.description}
-                />
-                <Card
-                  title={authorPost.title}
-                  name={authorPost.authorName}
-                  date={authorPost.date}
-                  description={authorPost.description}
-                />
-                <Card
-                  title={authorPost.title}
-                  name={authorPost.authorName}
-                  date={authorPost.date}
-                  description={authorPost.description}
-                />
-                <Card
-                  title={authorPost.title}
-                  name={authorPost.authorName}
-                  date={authorPost.date}
-                  description={authorPost.description}
-                />
+                  image={imageBlog}/>
+                
               </div>
             </div>
           </div>

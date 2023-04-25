@@ -92,9 +92,24 @@ const Careers = () => {
     );
   } else {
     return (
-      <>
-        Loading...
-      </>
+      <Row className="Careers-cotainer p-0">
+          <div className="job-container-item">
+            <Job
+              key={1}
+              title={job.title}
+              description={job.description}
+              id={86}
+              link={null}
+            />
+            <Job
+              key={2}
+              title={job.title}
+              description={job.description}
+              id={87}
+              link={null}
+            />
+          </div>
+        </Row>
     );
   }
 };
