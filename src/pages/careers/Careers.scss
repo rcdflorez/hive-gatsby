@@ -1,58 +1,83 @@
 div .Careers-cotainer {
-  .job-container-item {
-    h3 {
-      font-size: 1.2rem;
-      margin: 2rem 0;
+  background-color: #A2C8D1;
+  .job-container-item{
+    padding: 5rem 4rem;
+  }
+  .hive-card{
+    max-width: 90%;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #000;
+    box-shadow: 3px 3px 0px 0 #000;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  .hive-card .header{
+    border-bottom: 1px solid #000;
+    padding: .3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .hive-card .header .square{
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+  }
+  .hive-card .header .lines{
+    width: 98%;
+    height: 2px;
+    background-color: #000;
+    line-height: 2px;
+  }
+  .hive-card .header .lines::before, .hive-card .header .lines::after{
+    background-color: #000000;
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    position: relative;
+    top: -8px;
+  }
+  .hive-card .header .lines::after{
+    top: -6px;
+  }
+  
+  .hive-card .data{
+    padding: 1rem;
+  }
+  .hive-card .data .title h3{
+    font-weight: 300;
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+  .hive-card .data .info{
+    p{
+      padding-right: 2rem;
     }
-    .careers-item {
-      .job-title {
-        font-size: 1.2rem;
-        font-weight: 500;
-        margin-bottom: 1rem;
-      }
-      .description {
-        p {
-          font-size: 1rem;
-          font-weight: 500;
-          width: 100%;
-          margin-right: 2rem;
-        }
-        a {
-          background-color: #fec340;
-          color: #fff;
-          border: none;
-          width: 40%;
-          border-radius: 5px;
-          padding: 1rem;
-          text-align: center;
-          text-decoration: none;
-        }
-        a:hover {
-          background-color: #232325;
-        }
-      }
+  }
+  .view-job{
+    background-color: #21323D;
+    width: fit-content;
+    border-radius: 50%;
+    padding: .4rem .8rem;
+    img{
+      width: 10px;
     }
+  }
+  .view-job:hover{
+    background-color: #17232b;
   }
 }
 
 @media (max-width: 768px) {
-  div .Careers-cotainer {
-    .job-container-item {
-      .careers-item {
-        .job-title {
-          text-align: center;
-        }
-        .description {
-          p {
-            margin-right: inherit;
-            text-align: center;
-          }
-          button {
-            margin-top: 1rem;
-            width: 100%;
-          }
-        }
-      }
+  div .Careers-cotainer{
+    .job-container-item{
+      padding: 5rem 1rem;
+    }
+    .hive-card{
+      max-width: 100%;
     }
   }
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import "./NavBar.scss";
 import Logo from "./hive_fs_logo_Final_black.png";
 import { Link } from "gatsby";
 

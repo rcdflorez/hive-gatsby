@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import SubHero from "../components/SubHero/SubHero";
-import NavBar from "../components/navBar/NavBar";
+import NavBar from "../components/navBar/_NewNavBar";
 import Container from "react-bootstrap/Container";
-import ContactUs from "../components/ContactUs/ContactUs";
 import Footer from "../components/Footer/Footer";
+import ImgCarrers from "./Mask Group 1.png";
 
 function FecthPostDetails(id) {
   const [PostDetails, setPostDetails] = useState(null);
@@ -36,17 +36,21 @@ const PostDetails = ({ location }) => {
       return (
         <>
           <NavBar />
-          <Container fluid className="App m-0">
-            <SubHero title={location.state.title} className="mb-5 pb-5" />
+          <Container
+            fluid
+            className="App m-0"
+            style={{ backgroundColor: "#A2C8D1" }}
+          >
+            <SubHero title="Blog" bgImage={ImgCarrers} />
 
             <div
-              style={{ padding: "10rem 10rem" }}
-              className="container post-container"
+              style={{ padding: "10rem 10rem", backgroundColor: "white" }}
+              className="container post-container my-5"
               dangerouslySetInnerHTML={createMarkup(
                 PostDetails.content.rendered
               )}
             />
-            <ContactUs />
+
             <Footer />
           </Container>
         </>
@@ -56,7 +60,7 @@ const PostDetails = ({ location }) => {
         <>
           <NavBar />
           <Container fluid className="App m-0">
-            <SubHero title={location.state.title} className="mb-5 pb-5" />
+            <SubHero title="Blog" bgImage={ImgCarrers} />
             <div className="text-center" style={{ minHeight: "400px" }}>
               <div
                 style={{ marginTop: "100%" }}
@@ -174,7 +178,7 @@ const PostDetails = ({ location }) => {
                 </svg>
               </div>
             </div>
-            <ContactUs />
+
             <Footer />
           </Container>
         </>

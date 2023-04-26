@@ -1,4 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/montserrat");
+@import url("https://use.typekit.net/ber4kcz.css");
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -20,4 +21,20 @@ p {
 svg path,
 svg rect {
   fill: #232325;
+}
+
+.custom-title {
+  font-family: "acumin-pro", sans-serif;
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 40px;
+  letter-spacing: 4px;
+}
+
+.custom-copy {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 4px;
 }

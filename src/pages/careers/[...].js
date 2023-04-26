@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import SubHero from "../components/SubHero/SubHero";
-import NavBar from "../components/navBar/NavBar";
+import NavBar from "../components/navBar/_NewNavBar";
 import Container from "react-bootstrap/Container";
 import ContactUs from "../components/ContactUs/ContactUs";
 import Footer from "../components/Footer/Footer";
+import ImgCarrers from "./Mask Group 2.png";
 
 function FecthCareerDetails(id) {
   const [careerDetails, setCareerDetails] = useState(null);
@@ -37,17 +38,20 @@ const CareerDetail = ({ location }) => {
       return (
         <>
           <NavBar />
-          <Container fluid className="App m-0">
-            <SubHero title={location.state.title} className="mb-5 pb-5" />
+          <Container
+            fluid
+            className="App m-0 "
+            style={{ backgroundColor: "#A2C8D1" }}
+          >
+            <SubHero title="Careers" bgImage={ImgCarrers} />
 
             <div
-              style={{ padding: "10rem 10rem" }}
-              className="container position-container"
+              style={{ padding: "10rem 10rem", backgroundColor: "white" }}
+              className="container position-container my-5"
               dangerouslySetInnerHTML={createMarkup(
                 careerDetail.content.rendered
               )}
             />
-            <ContactUs />
             <Footer />
           </Container>
         </>
@@ -57,7 +61,7 @@ const CareerDetail = ({ location }) => {
         <>
           <NavBar />
           <Container fluid className="App m-0">
-            <SubHero title={location.state.title} className="mb-5 pb-5" />
+            <SubHero title="Careers" bgImage={ImgCarrers} />
             <div className="text-center" style={{ minHeight: "400px" }}>
               <div
                 style={{ marginTop: "100%" }}
@@ -175,7 +179,6 @@ const CareerDetail = ({ location }) => {
                 </svg>
               </div>
             </div>
-            <ContactUs />
             <Footer />
           </Container>
         </>
@@ -309,7 +312,7 @@ const CareerDetail = ({ location }) => {
       );
     }
   } else {
-    return <p>Fail</p>;
+    return <p>.</p>;
   }
 };
 

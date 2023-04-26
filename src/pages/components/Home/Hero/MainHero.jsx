@@ -6,36 +6,24 @@ import { Link } from "gatsby";
 const MainHero = () => {
   return (
     <>
-      <div className="main-hero-container  row ">
-        <div className="row">
-          <div className="my-auto text-center">
-            <h1>Engine of Capital Movement</h1>
-            <h4 className="py-4">
-              END TO END REAL TIME AUTOMATION FOR THE LENDING INDUSTRY
-            </h4>
-            <h6>
-              Hive Financial Systems brings together decades of industry
-              experience with <br /> sophisticated automation and technology
-              expertise
-            </h6>
-            <div className="pt-5 mt-5">
-              <Link
-                to="/contact-us"
-                className="my-auto mx-3 mx-sm-5 contact-us"
-              >
-                CONTACT US
-              </Link>
-            </div>
-          </div>
+      <div className="main-hero-container row position-relative">
+
+        <div className="col-md-6 position-absolute text-center text-md-start bottom-0 my-md-4 copy">
+          ________ <br></br><br></br>
+
+
+          <h3 className="custom-title"> EMPOWER & ELEVATE </h3> <br></br>
+
+
+          <span className="custom-copy"> 
+            At Hive Financial Systems we work together to empower 
+            each other with microfinance tools and technology to 
+            elevate each other's financial health. 
+          </span>
         </div>
+
       </div>
-      <div className="row py-5 my-5">
-        <div className="col-md-7 mx-auto text-center">
-          <video className="hive-video w-100" controls>
-            <source src={HiveVideo} type="video/mp4" />
-          </video>
-        </div>
-      </div>
+
     </>
   );
 };

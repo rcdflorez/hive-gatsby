@@ -1,11 +1,26 @@
 div.sub-hero-container {
-  background-image: url("../../../images/bg-1-2000x1000.jpeg");
-  min-height: 30vh;
+  // background-image: url("../../../images/bg-1-2000x1000.jpeg");
+  min-height: 60vh;
+  margin-top: 6rem;
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: center bottom;
-  background-attachment: scroll;
   background-size: cover;
   h1 {
     color: white;
+  }
+  .subHero-title{
+    text-transform: uppercase;
+    background-color: #918444;
+    padding: .5rem;
+    width: 350px;
+    margin: 1rem 0;
+  }
+}
+
+
+@media screen and (max-width: 825px){
+  div.sub-hero-container {
+    min-height: 30vh;
+    background-position: unset;
   }
 }

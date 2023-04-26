@@ -2,13 +2,15 @@ import React, { useEffect, useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./OurServices.scss";
+import CardServices from "./CardServices";
 
 const regex = /(<([^>]+)>)/gi;
 
 function FecthServices() {
-  const [ourServices, setOurServices] = useState(null);
+  const [ourServices, setOurServices] = useState();
 
   useEffect(() => {
+
     fetch(
       `${process.env.GATSBY_CMS_BASE_URL}${process.env.GATSBY_CMS_API_URL}our_services`
     )
@@ -18,6 +20,8 @@ function FecthServices() {
       .then((json) => {
         setOurServices(json);
       });
+
+    
   }, []);
   if (!ourServices) return "Loading...";
   else return ourServices;
@@ -27,35 +31,35 @@ const OurServicesGrid = () => {
   let services = FecthServices();
   if (services !== "Loading...") {
     return (
-      <>
-        <h3 className="text-center pt-5">Our services</h3>
-        <Row className="services-container container pt-5 mt-5 px-5 mx-auto">
-          {services.map((service, idx) => (
-            <Col className="service-card mx-3 p-5 px-4" key={idx}>
-              <Row className="img-container">
-                <img
-                  className="mx-auto"
-                  src={service.featured_image_src}
-                  alt=""
-                />
-              </Row>
-              <Row className="mx-auto">
-                <h5 className="text-center py-4 service-title">
-                  {service.title.rendered}
-                </h5>
-              </Row>
-              <Row className="mx-auto">
-                <p className="service-description">
-                  {service.excerpt.rendered.replace(regex, "")}
-                </p>
-              </Row>
-            </Col>
-          ))}
+      <Row>
+        <Row className="services-container cards container-fluid d-flex text-center text-md-start py-5 px-5 mx-auto">
+          <h3 className="pt-5 cards-title">WHAT WE DO</h3>
+          {services.map((card, i) =>
+            <CardServices key={i} title={card.title.rendered} data={card.excerpt.rendered}/>)
+          }
         </Row>
-      </>
+      </Row>
     );
   } else {
-    return <p>Loading...</p>;
+    return(
+      <Row>
+        <Row className="services-container cards container-fluid d-flex text-center text-md-start py-5 px-5 mx-auto">
+          <h3 className="pt-5 cards-title">WHAT WE DO</h3>
+          <div className="hive-card">
+            <div className="header">
+              <div className="square"></div>
+              <div className="lines"></div>
+            </div>
+            <div className="data">
+              <div className="title">
+                <h3></h3>
+              </div>
+              <div className="info"></div>
+            </div>
+          </div>
+        </Row>
+      </Row>
+    )
   }
 };
 
