@@ -6,18 +6,17 @@ import hiveLogo from "./_newLogo.png";
 import Form from "./Form";
 
 const Footer = () => {
-
-  
-
   return (
     <footer>
-      <Row className="footer-cotainer p-2 pb-4 p-md-5 m-md-2">
+      <Row className="footer-cotainer p-2 pb-4 p-md-5">
         <Col xs={12} md={5} className="text-center text-md-start my-5 my-md-0">
-          <img src={hiveLogo} alt="" height={80}/>
+          <img src={hiveLogo} alt="" height={80} />
         </Col>
         <Col xs={12} md={7} className="footer-data">
           <div className="footer-title text-center text-md-start">
-            <h2>JOIN OUR <br /> TALENT COMMUNITY</h2>
+            <h2>
+              JOIN OUR <br /> TALENT COMMUNITY
+            </h2>
           </div>
           {/* <div className="footer-text">
             <p>

@@ -43,12 +43,14 @@ class CustNavbar extends React.Component {
         <Navbar className=" Nav w-100 " bg="light" expand="">
           <Container fluid>
             <Navbar.Brand href="#" className="mx-auto  ">
-              <img
-                height="80px"
-                width="auto"
-                src={Logo}
-                className="m-sm-1 my-2"
-              />
+              <Link to="/">
+                <img
+                  height="80px"
+                  width="auto"
+                  src={Logo}
+                  className="m-sm-1 my-2"
+                />
+              </Link>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbar" />
             <Navbar.Collapse id="navbar" className="h-100">

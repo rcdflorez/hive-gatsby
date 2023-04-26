@@ -7,7 +7,7 @@
 .Nav {
   position: fixed;
   z-index: 100;
-  background-color: white;
+
   top: 0;
   a {
     text-decoration: none;
@@ -17,7 +17,7 @@
     text-transform: uppercase;
   }
   a:hover {
-    color: black;
+    color: #8f8445;
     cursor: pointer;
   }
   a.contact-us {
@@ -30,26 +30,23 @@
     border: solid #232325 2px;
     color: white;
   }
-  a.navbar-brand{
+  a.navbar-brand {
     padding-left: 3.1rem;
   }
-  div.navbar-collapse{
+  div.navbar-collapse {
     text-align: center;
   }
 
   span.navbar-toggler-icon {
-    background-image: url('./_menuIcon.svg') !important;
+    background-image: url("./_menuIcon.svg") !important;
     height: 58px !important;
     width: 48px !important;
-    
-}
+  }
 
   button.navbar-toggler {
     border: none !important;
     height: 90px !important;
-   
   }
-
 }
 
 img ~ img {
@@ -70,7 +67,7 @@ img ~ img {
     color: black;
   }
   a:hover {
-    color: #8F8445;
+    color: #8f8445;
     cursor: pointer;
   }
   a.contact-us {
