@@ -1,6 +1,6 @@
 div.main-hero-container {
   min-height: 100vh;
-  background-image: url("JPoWNn.tif.png");
+  background-image: url("JPoWNn.tif.jpeg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -25,10 +25,10 @@ div.main-hero-container {
     text-decoration: none;
   }
 
-  div.copy{
+  div.copy {
     background-color: #918444;
     padding: 2rem;
-    padding-left: 5rem;  
+    padding-left: 5rem;
   }
 }
 
@@ -37,12 +37,12 @@ div.main-hero-container {
     min-height: 70vh;
     background-position: top;
     background-size: cover;
-    div.copy{
+    div.copy {
       padding: 1rem 3rem;
-      .custom-title{
+      .custom-title {
         font-size: 20px;
       }
-      .custom-copy{
+      .custom-copy {
         font-size: 16px;
       }
     }
