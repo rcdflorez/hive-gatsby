@@ -78,7 +78,7 @@ class CustNavbar extends React.Component {
                 </Link>
                 <Link
                   activeStyle={activeStylesMobile}
-                  className="my-auto mx-3 mx-sm-5 disabled d-none"
+                  className="my-auto mx-3 mx-sm-5"
                   to="/careers"
                 >
                   Careers
