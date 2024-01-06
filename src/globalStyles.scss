@@ -42,10 +42,11 @@ svg rect {
     &:focus {
       outline: 0;
       border-bottom-color: #6658d3;
+      /*
       & + .lp-ellipsis {
         color: #6658d3;
         transform: translateY(-1.5rem);
-      }
+      } */
     }
   }
   button {
