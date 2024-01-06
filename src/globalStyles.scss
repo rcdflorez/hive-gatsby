@@ -23,9 +23,18 @@ svg rect {
   fill: #232325;
 }
 
-.dynamics-form input,
-.dynamics-form-2 input {
-  border: solid red 1px;
+.dynamics-form,
+.dynamics-form-2 {
+  input {
+    border: solid red 1px;
+  }
+  button {
+    color: white;
+    background-color: rgb(82, 85, 155) !important;
+    border-radius: 15px;
+    margin-top: 20px !important;
+    padding: 20px 100px;
+  }
 }
 
 .custom-title {
