@@ -39,11 +39,10 @@ svg rect {
     font: inherit;
     font-size: 1.125rem;
     padding: 0.25rem 0;
-    &:focus,
-    &:valid {
+    &:focus {
       outline: 0;
       border-bottom-color: #6658d3;
-      & + .input-label {
+      & + .lp-ellipsis {
         color: #6658d3;
         transform: translateY(-1.5rem);
       }
@@ -56,6 +55,9 @@ svg rect {
     margin-top: 20px !important;
     padding: 20px 100px;
     border-color: none !important;
+  }
+  span.lp-required {
+    display: none;
   }
 }
 
