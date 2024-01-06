@@ -25,15 +25,37 @@ svg rect {
 
 .dynamics-form,
 .dynamics-form-2 {
+  label {
+    color: #8597a3;
+    position: absolute;
+    top: 1.5rem;
+    transition: 0.25s ease;
+  }
   input {
-    border: solid red 1px;
+    border: 0;
+    z-index: 1;
+    background-color: transparent;
+    border-bottom: 2px solid #eee;
+    font: inherit;
+    font-size: 1.125rem;
+    padding: 0.25rem 0;
+    &:focus,
+    &:valid {
+      outline: 0;
+      border-bottom-color: #6658d3;
+      & + .input-label {
+        color: #6658d3;
+        transform: translateY(-1.5rem);
+      }
+    }
   }
   button {
     color: white;
     background-color: rgb(82, 85, 155) !important;
-    border-radius: 15px;
+    border-radius: 15px !important;
     margin-top: 20px !important;
     padding: 20px 100px;
+    border-color: none !important;
   }
 }
 
