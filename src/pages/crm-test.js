@@ -34,42 +34,8 @@ const CrmTest = () => {
             </Row>
             <Row>
               <Col className="text-center top-header">
-                <h5>Q4 FY 2023</h5>
+                <h5>Q4 FY2023</h5>
                 <h1>INVESTOR UPDATE</h1>
-              </Col>
-            </Row>
-            <Row>
-              <Col className="text-center">
-                <img
-                  width={50}
-                  className="w-full img-fluid py-5 ax-center ay-middle img-icon"
-                  src={"https://hfacms.leapcredit.com/email-assets/2.png"}
-                  alt="hfa icon"
-                />
-                <div class="custom-box">
-                  <div class="header rounded-top">
-                    <h6 class="ax-center">WHAT</h6>
-                  </div>
-                  <div class="content rounded-bottom ax-center text-center">
-                    Q4 FY2023 Investor Update
-                  </div>
-                </div>
-              </Col>
-              <Col className="text-center">
-                <img
-                  width={50}
-                  className="w-full img-fluid py-5 ax-center ay-middle img-icon"
-                  src={"https://hfacms.leapcredit.com/email-assets/1.png"}
-                  alt="hfa icon"
-                />
-                <div class="custom-box">
-                  <div class="header rounded-top">
-                    <h6 class="ax-center">WHEN</h6>
-                  </div>
-                  <div class="content rounded-bottom ax-center text-center">
-                    Wednesday, February 7 4:30 PM – 6:00 PM
-                  </div>
-                </div>
               </Col>
             </Row>
             <Row className="p-0">
@@ -82,11 +48,11 @@ const CrmTest = () => {
                   }
                   alt="hfa icon"
                 />
-                <div class="custom-box">
+                <div class="custom-box col">
                   <div class="header rounded-top">
                     <h6 class="ax-center">WHERE</h6>
                   </div>
-                  <div class="content rounded-bottom ax-center text-center">
+                  <div class="content align-middle rounded-bottom ax-center text-center ">
                     3344 Peachtree Road, Suite 2600, Atlanta GA
                   </div>
                 </div>
@@ -98,18 +64,50 @@ const CrmTest = () => {
                   src={"https://hfacms.leapcredit.com/email-assets/3.png"}
                   alt="hfa icon"
                 />
-                <div class="custom-box">
+                <div class="custom-box col">
                   <div class="header rounded-top">
                     <h6 class="ax-center">LIVE STREAM</h6>
                   </div>
-                  <div class="content rounded-bottom ax-center text-center">
-                    Begins at 5:00 PM ET
+                  <div class="content  rounded-bottom ax-center text-center">
+                    <span className="align-middle">Begins at 5:00 PM ET</span>
+                  </div>
+                </div>
+              </Col>
+              <Col className="text-center">
+                <img
+                  width={50}
+                  className="w-full img-fluid py-5 ax-center ay-middle img-icon"
+                  src={"https://hfacms.leapcredit.com/email-assets/2.png"}
+                  alt="hfa icon"
+                />
+                <div class="custom-box col">
+                  <div class="header rounded-top">
+                    <h6 class="ax-center">WHAT</h6>
+                  </div>
+                  <div class="content align-middle rounded-bottom ax-center text-center">
+                    Q4 FY2023 Investor Update
+                  </div>
+                </div>
+              </Col>
+              <Col className="text-center">
+                <img
+                  width={50}
+                  className="w-full img-fluid py-5 ax-center ay-middle img-icon"
+                  src={"https://hfacms.leapcredit.com/email-assets/1.png"}
+                  alt="hfa icon"
+                />
+                <div class="custom-box col">
+                  <div class="header rounded-top">
+                    <h6 class="ax-center">WHEN</h6>
+                  </div>
+                  <div class="content align-middle rounded-bottom ax-center text-center">
+                    Wednesday, February 7 4:30 PM – 6:00 PM
                   </div>
                 </div>
               </Col>
             </Row>
             <Row className="text-center py-5">
-              <h1>
+              <h1 className="sub-header">
                 We cordially invite you to register for our Q4 FY2023 Investor
                 Update, on Wednesday, February 7.
               </h1>
