@@ -42,7 +42,7 @@ const CrmTest = () => {
               <Col className="text-center">
                 <img
                   width={50}
-                  className="w-full img-fluid py-5 ax-center ay-middle img-icon"
+                  className="w-full img-fluid pt-5 pb-2 ax-center ay-middle img-icon"
                   src={
                     "https://hfacms.leapcredit.com/email-assets/location.png"
                   }
@@ -60,7 +60,7 @@ const CrmTest = () => {
               <Col className="text-center">
                 <img
                   width={50}
-                  className="w-full img-fluid py-5 ax-center ay-middle img-icon"
+                  className="w-full img-fluid pt-5 pb-2 ax-center ay-middle img-icon"
                   src={"https://hfacms.leapcredit.com/email-assets/3.png"}
                   alt="hfa icon"
                 />
@@ -76,7 +76,7 @@ const CrmTest = () => {
               <Col className="text-center">
                 <img
                   width={50}
-                  className="w-full img-fluid py-5 ax-center ay-middle img-icon"
+                  className="w-full img-fluid pt-5 pb-2 ax-center ay-middle img-icon"
                   src={"https://hfacms.leapcredit.com/email-assets/2.png"}
                   alt="hfa icon"
                 />
@@ -92,7 +92,7 @@ const CrmTest = () => {
               <Col className="text-center">
                 <img
                   width={50}
-                  className="w-full img-fluid py-5 ax-center ay-middle img-icon"
+                  className="w-full img-fluid pt-5 pb-2 ax-center ay-middle img-icon"
                   src={"https://hfacms.leapcredit.com/email-assets/1.png"}
                   alt="hfa icon"
                 />
@@ -106,7 +106,7 @@ const CrmTest = () => {
                 </div>
               </Col>
             </Row>
-            <Row className="text-center py-5">
+            <Row className="text-center pt-5 pb-2">
               <h1 className="sub-header">
                 We cordially invite you to register for our Q4 FY2023 Investor
                 Update, on Wednesday, February 7.
