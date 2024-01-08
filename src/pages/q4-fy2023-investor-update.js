@@ -59,7 +59,7 @@ const CrmTest = () => {
                 <img
                   width={50}
                   className="w-full img-fluid pt-5 pb-2 ax-center ay-middle img-icon"
-                  src={"https://hfacms.leapcredit.com/email-assets/1.png"}
+                  src={"https://assets-usa.mkt.dynamics.com/30abe4d4-b070-4218-9b36-a15cd505d97b/digitalassets/images/c45a15c2-57ae-ee11-a569-00224805cb79?ts=638403370480850882"}
                   alt="hfa icon"
                 />
                 <div class="custom-box col">
@@ -76,7 +76,7 @@ const CrmTest = () => {
                   width={50}
                   className="w-full img-fluid pt-5 pb-2 ax-center ay-middle img-icon"
                   src={
-                    "https://assets-usa.mkt.dynamics.com/30abe4d4-b070-4218-9b36-a15cd505d97b/digitalassets/images/c45a15c2-57ae-ee11-a569-00224805cb79?ts=638403370480850882"
+                    "https://hfacms.leapcredit.com/email-assets/location.png"
                   }
                   alt="hfa icon"
                 />
