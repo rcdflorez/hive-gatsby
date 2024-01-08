@@ -38,6 +38,11 @@ svg rect {
     border-radius: 10px 10px 0px 0px;
   }
 
+  .columnContainer h1, .columnContainer h2
+{
+  display: none;
+}
+
   .custom-box-main .content,
   .custom-box .content {
     background-color: #2d2d2d;
