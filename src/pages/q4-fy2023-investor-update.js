@@ -39,6 +39,38 @@ const CrmTest = () => {
               </Col>
             </Row>
             <Row className="p-0">
+                    <Col className="text-center">
+                <img
+                  width={50}
+                  className="w-full img-fluid pt-5 pb-2 ax-center ay-middle img-icon"
+                  src={"https://assets-usa.mkt.dynamics.com/30abe4d4-b070-4218-9b36-a15cd505d97b/digitalassets/images/7db50177-58ae-ee11-a569-00224805cb79?ts=638403373551084369"}
+                  alt="hfa icon"
+                />
+                <div class="custom-box col">
+                  <div class="header rounded-top">
+                    <h6 class="ax-center">WHAT</h6>
+                  </div>
+                  <div class="content align-middle rounded-bottom ax-center text-center">
+                    Q4 FY2023 Investor Update
+                  </div>
+                </div>
+              </Col>
+              <Col className="text-center">
+                <img
+                  width={50}
+                  className="w-full img-fluid pt-5 pb-2 ax-center ay-middle img-icon"
+                  src={"https://assets-usa.mkt.dynamics.com/30abe4d4-b070-4218-9b36-a15cd505d97b/digitalassets/images/c45a15c2-57ae-ee11-a569-00224805cb79?ts=638403370480850882"}
+                  alt="hfa icon"
+                />
+                <div class="custom-box col">
+                  <div class="header rounded-top">
+                    <h6 class="ax-center">WHEN</h6>
+                  </div>
+                  <div class="content align-middle rounded-bottom ax-center text-center">
+                    Wednesday, February 7 4:30 PM – 6:00 PM
+                  </div>
+                </div>
+              </Col>
               <Col className="text-center">
                 <img
                   width={50}
@@ -73,38 +105,7 @@ const CrmTest = () => {
                   </div>
                 </div>
               </Col>
-              <Col className="text-center">
-                <img
-                  width={50}
-                  className="w-full img-fluid pt-5 pb-2 ax-center ay-middle img-icon"
-                  src={"https://hfacms.leapcredit.com/email-assets/2.png"}
-                  alt="hfa icon"
-                />
-                <div class="custom-box col">
-                  <div class="header rounded-top">
-                    <h6 class="ax-center">WHAT</h6>
-                  </div>
-                  <div class="content align-middle rounded-bottom ax-center text-center">
-                    Q4 FY2023 Investor Update
-                  </div>
-                </div>
-              </Col>
-              <Col className="text-center">
-                <img
-                  width={50}
-                  className="w-full img-fluid pt-5 pb-2 ax-center ay-middle img-icon"
-                  src={"https://hfacms.leapcredit.com/email-assets/1.png"}
-                  alt="hfa icon"
-                />
-                <div class="custom-box col">
-                  <div class="header rounded-top">
-                    <h6 class="ax-center">WHEN</h6>
-                  </div>
-                  <div class="content align-middle rounded-bottom ax-center text-center">
-                    Wednesday, February 7 4:30 PM – 6:00 PM
-                  </div>
-                </div>
-              </Col>
+              
             </Row>
             <Row className="text-center pt-5 pb-2">
               <h1 className="sub-header">
