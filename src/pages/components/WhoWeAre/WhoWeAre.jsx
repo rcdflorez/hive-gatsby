@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import "./WhoWeAre.scss";
-import NewsImage from "./Rectangle741.jpeg";
+import NewsImage from "./UpdatedRectanle.jpg";
 import ArrowImage from "../../../images/arrow.png";
 import { Link } from "gatsby";
 const WhoWeAre = () => {
