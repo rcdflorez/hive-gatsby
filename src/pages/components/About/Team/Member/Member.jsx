@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 
 const Member = (props) => {
   return (
-
     <div className="hive-card">
       <div className="header">
         <div className="square"></div>
@@ -10,22 +9,31 @@ const Member = (props) => {
       </div>
       <div className="data">
         <div className="photo">
-           <img
+          <img
             src={props.image}
             alt="user"
             width={200}
             height={200}
-            style={{ aspectRatio: "auto 1122 / 1122" }}
+            style={{
+              aspectRatio: "auto 1122 / 1122",
+              maxHeight: "245px",
+              maxWidth: "245px",
+            }}
           />
         </div>
         <div className="info">
           <p>{props.title}</p>
-            {props.link
-              ? <a target="_blank" href={props.link} style={{ textDecoration: "none" }}>
-                  <h2>{props.name}</h2>
-                </a>
-              : <h2>{props.name}</h2>
-            }
+          {props.link ? (
+            <a
+              target="_blank"
+              href={props.link}
+              style={{ textDecoration: "none" }}
+            >
+              <h2>{props.name}</h2>
+            </a>
+          ) : (
+            <h2>{props.name}</h2>
+          )}
         </div>
       </div>
     </div>
