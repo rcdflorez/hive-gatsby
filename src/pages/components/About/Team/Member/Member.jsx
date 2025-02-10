@@ -11,8 +11,10 @@ const Member = (props) => {
     setIsHovered(false);
   };
 
-  // Truncate title to 28 characters and add ellipsis
-  const truncatedTitle = props.title.length > 25 ? `${props.title.substring(0, 25)}...` : props.title;
+  // Check if props.title is defined and is a string
+  const truncatedTitle = (props.title && props.title.length > 25)
+    ? `${props.title.substring(0, 25)}...`
+    : props.title || ''; // fallback to an empty string if title is not defined
 
   return (
     <div className="hive-card">
@@ -37,7 +39,7 @@ const Member = (props) => {
             style={{ cursor: "pointer", position: "relative" }}
           >
             {truncatedTitle}
-            {props.title.length > 25 && isHovered && (
+            {props.title && props.title.length > 25 && isHovered && (
               <span
                 style={{
                   position: "absolute",
