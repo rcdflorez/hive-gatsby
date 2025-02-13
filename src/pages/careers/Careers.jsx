@@ -66,9 +66,9 @@ function decodeHTMLEntities(str) {
 
 const Careers = () => {
   const job = {
-    title: "Python Developer",
+    title: "",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione enim voluptatem a qui maxime accusantium deserunt est odio eaque quas.",
+      "",
   };
 
   const careers = FecthCareers();
@@ -94,20 +94,8 @@ const Careers = () => {
     return (
       <Row className="Careers-cotainer p-0">
           <div className="job-container-item">
-            <Job
-              key={1}
-              title={job.title}
-              description={job.description}
-              id={86}
-              link={null}
-            />
-            <Job
-              key={2}
-              title={job.title}
-              description={job.description}
-              id={87}
-              link={null}
-            />
+            
+          
           </div>
         </Row>
     );
