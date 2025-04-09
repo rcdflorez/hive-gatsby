@@ -11,29 +11,42 @@ const parse = require("html-react-parser");
 function FecthCareers() {
   const [ourCareers, setOurCareers] = useState(null);
 
-  useEffect(() => {
-    fetch(
-      `${process.env.GATSBY_CMS_BASE_URL}${process.env.GATSBY_CMS_API_URL}careers`
-    )
-      .then((response) => {
-        return response.json();
-      })
-      .then((json) => {
-        setOurCareers(json);
-      });
+   useEffect(() => {
+    // Dynamically load the Greenhouse script
+    const script = document.createElement('script');
+    script.src = 'https://boards.greenhouse.io/embed/job_board/js?for=hivefinancialsystems';
+    script.async = true;
+    document.body.appendChild(script);
+    
+    // Clean up the script when the component unmounts
+    return () => {
+      document.body.removeChild(script);
+    };
   }, []);
-  if (!ourCareers) return "Loading...";
-  else
-    return ourCareers.sort(function (a, b) {
-      if (a.id > b.id) {
-        return 1;
-      }
-      if (a.id < b.id) {
-        return -1;
-      }
-      // a must be equal to b
-      return 0;
-    });
+
+  // useEffect(() => {
+  //   fetch(
+  //     `${process.env.GATSBY_CMS_BASE_URL}${process.env.GATSBY_CMS_API_URL}careers`
+  //   )
+  //     .then((response) => {
+  //       return response.json();
+  //     })
+  //     .then((json) => {
+  //       setOurCareers(json);
+  //     });
+  // }, []);
+  // if (!ourCareers) return "Loading...";
+  // else
+  //   return ourCareers.sort(function (a, b) {
+  //     if (a.id > b.id) {
+  //       return 1;
+  //     }
+  //     if (a.id < b.id) {
+  //       return -1;
+  //     }
+  //     // a must be equal to b
+  //     return 0;
+  //   });
 }
 
 function parseHtmlEnteties(str) {
@@ -76,7 +89,7 @@ const Careers = () => {
     return (
       <>
         <Row className="Careers-cotainer p-0">
-          <div className="job-container-item">
+          {/* <div className="job-container-item">
             {careers.map((career, idx) => (
               <Job
                 key={idx}
@@ -86,8 +99,10 @@ const Careers = () => {
                 link={career.link.split("/careers/")[1]}
               />
             ))}
-          </div>
+          </div> */}
+          <div id="grnhse_app" className='grhStyles'></div>
         </Row>
+        
       </>
     );
   } else {
