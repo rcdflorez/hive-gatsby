@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { Col, Row } from "react-bootstrap";
 import arrowImg from "./arrow.png";
-import "../Careers.scss";
+//import "./src/pages/careers/Careers.scss";
 
 const Job = (props) => {
   return (

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Careers.scss";
-import Job from "./job/job";
+import Job from "../../components/job/job.jsx";
 import { Row, Alert, Spinner, Col } from "react-bootstrap";
 
 // Helper function to decode HTML entities (more comprehensive basic list)
