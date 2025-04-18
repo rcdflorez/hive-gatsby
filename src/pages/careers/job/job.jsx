@@ -1,62 +1,59 @@
 import React from "react";
 import { Link } from "gatsby";
-import { Col } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import arrowImg from "./arrow.png";
-import "../Careers.scss"; // Import parent styles if needed, or move relevant styles
+import "../Careers.scss";
 
 const Job = (props) => {
   return (
     <>
-      {/* */}
       <div className="hive-card mx-auto">
-        {/* */}
         <div className="header">
           <div className="square"></div>
           <div className="lines"></div>
         </div>
-        {/* */}
-        <div className="data d-md-flex align-items-center">
-          {" "}
-          {/* Use align-items-center for better vertical alignment */}
-          {/* */}
+        <Row className="data align-items-center p-3">
           <Col
             xs={12}
             md={5}
-            className="title px-3 mb-3 mb-md-0 text-center text-md-start"
+            className="title-location mb-3 mb-md-0 text-center text-md-start"
           >
-            {/* */}
-            <h3>{props.title}</h3>
-          </Col>
-          {/* */}
-          <Col
-            xs={12}
-            md={5}
-            className="info px-3 mb-3 mb-md-0 text-center text-md-start"
-          >
-            {/* Display Location */}
-            <p style={{ fontWeight: "300", marginBottom: 0 }}>
-              {props.location}
+            <h3 className="mb-1">{props.title}</h3>
+            {/* Added optional chaining ?. just in case */}
+            <p className="text-muted mb-0">
+              {props.location || "Location not specified"}
             </p>
           </Col>
-          {/* */}
+          <Col
+            xs={12}
+            md={5}
+            className="info mb-3 mb-md-0 text-center text-md-start"
+          >
+            <p
+              style={{ fontWeight: "300", fontSize: "0.9rem" }}
+              className="mb-0"
+            >
+              {props.description}
+            </p>
+          </Col>
           <Col
             xs={12}
             md={2}
-            className="d-flex justify-content-center justify-content-md-end px-3"
+            className="d-flex justify-content-center justify-content-md-end"
           >
-            {/* */}
-            <Link
-              className="view-job" //
-              to={props.detailPagePath} // Use the constructed path for internal Gatsby navigation
-              state={{ id: props.id, title: props.title }}
+            <a
+              className="view-job" // Keep the class for styling
+              href={props.detailPagePath} // Use href for standard links
+              target="_blank" // Open in new tab
+              rel="noopener noreferrer" // Security measure for target="_blank"
+              // Pass job title for potential accessibility use or tooltips if needed
+              aria-label={`View details for ${props.title} in a new tab`}
             >
-              {" "}
-              {/* Pass ID and Title */} {/* */}
-              <img src={arrowImg} alt="View Job Details Arrow" />{" "}
-              {/* Added alt text */}
-            </Link>
+              <img src={arrowImg} alt="" />{" "}
+              {/* Alt text could be improved if needed */}
+            </a>
           </Col>
-        </div>
+        </Row>
       </div>
     </>
   );
