@@ -61,7 +61,7 @@ class CustNavbar extends React.Component {
                 left: '15px',
                 top: '50%',
                 transform: 'translateY(-50%)',
-                height: this.state.isMobile ? "60px" : "90px",
+                height: this.state.isMobile ? "75px" : "90px",
                 width: "auto",
                 zIndex: 10
               }}
